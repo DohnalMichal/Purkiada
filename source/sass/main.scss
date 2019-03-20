@@ -1,0 +1,33 @@
+/*===Variables===*/
+
+$bg: #58ffb9;
+$Purkcolor: #00833e;
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin-ext');
+@import "mainNav.scss";
+@import "header.scss";
+
+body{
+	background: $bg;
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+	width: 100%;
+}
+
+section{
+	display: -webkit-box;
+}
+
+.wrapper{
+	width: 90%;
+	max-width: 1000px;
+	margin: 0 auto;
+	position: relative;
+}
+
+#content{
+	margin: auto 4em;
+	text-align: justify;
+	display: flex;
+	flex-direction: column;
+}
