@@ -4,15 +4,13 @@
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
-}
-
-.description h1{
-    font-size: 48px;
-    text-transform: uppercase;
-    color: white;
-    margin: 0;
-}
-
-.description p{
-    color: white;
+    h1{
+        font-size: 48px;
+        text-transform: uppercase;
+        color: white;
+        margin: 0;
+    }
+    p{
+        color: white;
+    }
 }

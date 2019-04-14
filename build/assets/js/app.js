@@ -44,3 +44,28 @@ $(window).on("scroll", function() {
           $('nav').removeClass('black');
     }
 })
+
+
+const $menu = $(".menu-icon");
+
+$(document).mouseup(function (e) {
+   if (!$menu.is(e.target) // if the target of the click isn't the container...
+   && $menu.has(e.target).length === 0) // ... nor a descendant of the container
+   {
+     $menu.removeClass('showing');
+  }
+ });
+
+$('.toggle').on('click', () => {
+  $menu.toggleClass('showing');
+});
+
+// $(document).on("click", function(e){
+//       if( 
+//         $(e.target).closest(".menu-icon").length == 0 &&
+//         $(".menu-icon").hasClass("showing") &&
+//         $(e.target).closest(".menu-icon").length == 0
+//       ){
+//         $('.menu').toggleClass('showing');
+//       }
+//     });

@@ -12,8 +12,7 @@ header{
 	line-height: 60px;
 	position: fixed;
 	float: left;
-	margin: 22px 46px;
-
+	margin: 16px 46px;
 }
 
 nav {
@@ -21,41 +20,36 @@ nav {
 	width: 100%;
 	line-height: 60px;
 	z-index: 1;
-}
-
-nav ul {
-	line-height: 60px;
-	list-style: none;
-	background: rgba(0, 0, 0, 0);
-	overflow: hidden;
-	color: #fff;
-	padding: 0;
-	text-align: right;
-	margin: 0;
-	transition: 1s;
+	ul {
+		line-height: 60px;
+		list-style: none;
+		background: rgba(0, 0, 0, 0);
+		overflow: hidden;
+		color: #fff;
+		padding: 0;
+		text-align: right;
+		margin: 0;
+		transition: 1s;
+		li{
+			display: inline-block;
+			padding: 16px 15px;
+			a {
+				text-decoration: none;
+				color: #fff;
+				font-size: 16px;
+			}
+			a:hover{
+				color: $Purkcolor;
+			}
+		}
+		li:last-child{
+			margin-right: 25px;
+		}
+	}
 }
 
 nav.black ul {
 	background: $black;
-}
-
-nav ul li {
-	display: inline-block;
-	padding: 16px 15px;
-}
-
-nav ul li a {
-	text-decoration: none;
-	color: #fff;
-	font-size: 16px;
-}
-
-nav ul li a:hover{
-	color: $Purkcolor;
-}
-
-nav ul li:last-child{
-	margin-right: 25px;
 }
 
 .menu-icon {
@@ -73,38 +67,39 @@ nav ul li:last-child{
 @media(max-width: 786px) {
 
 	.logo {
-		  position: fixed;
-		  top: 0;
-		  margin-top: 14px;
+		position: fixed;
+		top: 0;
+		margin-top: 8px;
 	}
 
-	nav ul {
-		  max-height: 0px;
-		  background: $black;
-	}
-
-	nav.black ul {
-		  background: $black;
+	nav{
+	 	ul{
+			max-height: 0px;
+			background: $black;
+		li{
+			box-sizing: border-box;
+			width: 100%;
+			text-align: center;
+			padding: 0;
+	  		}
+		}
+		li:first-child{
+			margin-top: 45px;
+		}
+		.black{
+			ul{
+				background: $black;
+			}
+		}
 	}
 
 	.showing {
-		  max-height: 34em;
-	}
-
-	nav ul li {
-		  box-sizing: border-box;
-		  width: 100%;
-		  text-align: center;
-		  padding: 0;
+		max-height: 34em;
 	}
 
 	.menu-icon {
-		  display: block;
-		  padding: 10px 24px 0px;
-	}
-
-	nav ul li:first-child{
-		margin-top: 45px;
+		display: block;
+		padding: 10px 24px 0px;
 	}
 }
 
