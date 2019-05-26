@@ -1,0 +1,70 @@
+.card-body{
+    margin-bottom: 12px;
+}
+
+.show {
+    display: block;
+}
+
+.btn-primary {
+    width: 400px;
+    height: 40px;
+    background-color: rgba(52, 152, 219, 0.753);
+    border: 1px solid rgba(255, 255, 255, 0.521);
+    
+}
+
+.card-body a{
+    color: black;
+    padding: 0;
+}
+.card-body ul li:first-child{
+    margin-top: 2px;
+}
+.card{
+    background-color: rgba(52, 152, 219, 0.753);
+    width: 400px;
+    position: relative;
+    transform: translate(-50%, 0);
+    left: 50%;
+    padding: 0;
+}
+
+.description {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    overflow: auto;
+}
+
+.description a{
+    margin: 0;
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+	padding: 8px 25px;
+	border: 1px solid rgba(255, 255, 255, 0.521);
+	border-radius: .25rem;
+	transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+}
+
+.description a:hover{
+	background: #0069d9;
+	cursor: pointer;
+}
+.description p{
+    padding: 0;
+    margin: 0;
+}
+
+@media(max-width: 786px) {
+    .btn-primary, .card{
+        width: 80vw;
+    }
+    .description {
+        top: 70%;
+        overflow: auto;
+    }
+    body{
+        overflow: auto;
+    }
+}
