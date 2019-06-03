@@ -12,5 +12,18 @@
     }
     p{
         color: white;
+        margin-bottom: 30px;
+    }
+    a {
+        text-decoration: none;
+        color: white;
+        padding: 8px 25px;
+        border: 1.5px solid rgba(255, 255, 255, 0.7);
+        border-radius: .25rem;
+        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out; 
+    }
+    a:hover {
+        background: rgba(209, 209, 209, 0.5);
+        cursor: pointer; 
     }
 }

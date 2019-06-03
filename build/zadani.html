@@ -10,7 +10,6 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- My CSS -->
   <link rel="stylesheet" href="assets/css/main.min.css"/> 
-  <link rel="stylesheet" href="assets/css/zadani.css"/>
   <!-- scripts -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -18,13 +17,17 @@
 
   <style>
     body{
-	  background: url("../assets/img/uglybackground.jpg") no-repeat center center;
+	  background: url("../assets/img/zadani1.jpg") no-repeat center center;
 	  background-size: cover;
 	  width: 100%;
     margin: 0;
     background-attachment:fixed;
-	  overflow: auto;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
+    header{
+      background: none;
+    }
   </style>
 </head>
 <body>
@@ -35,10 +38,10 @@
         </div>
           <div class="menu">
           <ul>
-            <li><a href="#">Přihláška</a></li>
-            <li><a href="#">Zadání</a></li>
-            <li><a href="#">Výsledky</a></li>
-            <li><a href="#">Fotogalerie</a></li>
+            <li><a href="prihlaska.html">Přihláška</a></li>
+            <li><a href="zadani.html">Zadání</a></li>
+            <li><a href="vysledky.html">Výsledky</a></li>
+            <li><a href="fotogalerie.html">Fotogalerie</a></li>
             <li><a href="informace.html">Informace</a></li>
         </ul>
         </div>
@@ -48,12 +51,12 @@
     </nav>
   </header>
 
-  <div class="description">
+  <div class="zadani">
       <h1>Zadání</h1>
       <p style="margin-bottom: 40px;">Zadání z minulých let:</p>
 
       <p>
-        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse2019" aria-expanded="false" aria-controls="collapse2019">
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse2019" aria-expanded="false" aria-controls="#collapse2019">
           2019
         </button>
       </p>
@@ -178,12 +181,6 @@
         </div>
       </div>
   </div>
-  
-
-  
-  <!-- <img src="assets/img/logo-2.png"> -->
-  <script src="./assets/js/vendors.js"></script>
   <script src="./assets/js/app.js"></script>
-  <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
 </body>
 </html>

@@ -1,0 +1,114 @@
+.vysledky {
+    transform: translate(-50%, -50%);
+    text-align: center;
+    position: absolute;
+    max-height: 512px;
+    top: 50%;
+    left: 50%;
+    p, h1{
+        color: white;
+        padding: 0;
+        margin: 0;
+    }
+    a{
+        margin: 0;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        padding: 8px 25px;
+        // border: 1px solid rgba(255, 255, 255, 0.521);
+        border-radius: .25rem;
+        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    }
+    a:hover, .btn-primary:hover{
+        background: #0069d9;
+        cursor: pointer;
+        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    }
+
+    .btn-primary {
+        width: 800px;
+        height: 40px;
+        background-color: rgba(52, 152, 219, 0.753);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.521);
+        //border-bottom: 1px solid #ccc;
+        
+    }
+
+    // .btn-primary:focus {
+    //    // background: #0069d9;
+    // }
+
+    thead{
+        font-weight: bold;
+    }
+    
+    .btn-primary, .card{
+        width: 800px;
+        color: white;
+    }
+    .card-body{
+        p {
+            margin: 18px 0;
+        }
+        // a {
+        //    // border: 1px solid rgba(255, 255, 255, 0.521);
+        // }
+    }
+}   
+
+@media(max-width: 786px) {
+    .btn-primary, .card{
+        max-width: 80vw;
+        // width: 80vw;
+    }
+    .vysledky {
+        top: 60%;
+    }
+}
+
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+        display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { border-bottom: 1px solid #ccc; }
+	
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		// border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 40%; 
+	}
+	
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 2px;
+		left: 0px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
+	
+	/*
+	Label the data
+	*/
+	td:nth-of-type(1):before { content: "Umístění"; }
+	td:nth-of-type(2):before { content: "Jméno"; }
+	td:nth-of-type(3):before { content: "Příjmení"; }
+	td:nth-of-type(4):before { content: "Škola"; }
+	td:nth-of-type(5):before { content: "Počet bodů"; }
+}
