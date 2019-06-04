@@ -12,7 +12,6 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!-- My CSS -->
 	<link rel="stylesheet" href="assets/css/main.min.css" />
-	<link rel="stylesheet" href="assets/css/zadani.css" />
 	<!-- scripts -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -23,15 +22,20 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
 		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
 		crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/scrollreveal"></script> 
 
 	<style>
 		body {
 			background: url("../assets/img/resultsbg.jpg") no-repeat center center;
-			background-size: cover;
+      background-size: cover;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
 			width: 100%;
 			margin: 0;
 			background-attachment: fixed;
-			overflow-x: auto;
+			overflow-x: hidden;
+			overflow-y: scroll;
 		}
 	</style>
 </head>
@@ -56,8 +60,8 @@
 	</nav>
 
 	<div class="vysledky">
-		<h1>Výsledky</h1>
-		<p style="margin-bottom: 40px;">Výsledky z minulých let:</p>
+		<h1 class="headline">Výsledky</h1>
+		<p class="text" style="margin-bottom: 40px;">Výsledky z minulých let:</p>
 
 		<p>
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse2019"
@@ -151,8 +155,9 @@
 					</tbody>
 				</table>
 				<p>
-					<a href="http://purkiada.sspbrno.cz/soubory/purkiada2019-vysledky.pdf">Kompletní výsledky Purkiády 2019 ve
-					formátu pdf.</a>
+					<button class="btn btn-secondary"> <a href="http://purkiada.sspbrno.cz/soubory/purkiada2019-vysledky.pdf">Kompletní výsledky Purkiády
+						2019 ve
+						formátu pdf.</a></button>
 				</p>
 
 			</div>
@@ -249,8 +254,9 @@
 					</tbody>
 				</table>
 				<p>
-					<a href="http://purkiada.sspbrno.cz/soubory/purkiada2019-vysledky.pdf">Kompletní výsledky Purkiády 2019 ve
-						formátu pdf.</a>
+					<button class="btn btn-secondary"><a href="http://purkiada.sspbrno.cz/soubory/purkiada2019-vysledky.pdf">Kompletní výsledky Purkiády
+						2019 ve
+						formátu pdf.</a></button>
 				</p>
 
 			</div>
@@ -347,8 +353,9 @@
 					</tbody>
 				</table>
 				<p>
-					<a href="http://purkiada.sspbrno.cz/soubory/purkiada2017-poradi-bez-jmen.pdf">Kompletní výsledky Purkiády 2017
-						ve formátu pdf.</a>
+					<button class="btn btn-secondary"><a href="http://purkiada.sspbrno.cz/soubory/purkiada2017-poradi-bez-jmen.pdf">Kompletní výsledky
+						Purkiády 2017
+						ve formátu pdf.</a></button>
 				</p>
 
 			</div>
@@ -453,8 +460,9 @@
 				</table>
 
 				<p>
-					<a href="http://purkiada.sspbrno.cz/soubory/purkiada2016-poradi-bez-jmen.pdf">Kompletní výsledky Purkiády 2016
-						ve formátu pdf.</a>
+					<button class="btn btn-secondary"><a href="http://purkiada.sspbrno.cz/soubory/purkiada2016-poradi-bez-jmen.pdf">Kompletní výsledky
+						Purkiády 2016
+						ve formátu pdf.</a></button>
 				</p>
 
 
@@ -560,8 +568,9 @@
 				</table>
 
 				<p>
-					<a href="http://purkiada.sspbrno.cz/soubory/purkiada2015-poradi-bez-jmen.pdf">Kompletní výsledky Purkiády 2015
-						ve formátu pdf.</a>
+					<button class="btn btn-secondary"><a href="http://purkiada.sspbrno.cz/soubory/purkiada2015-poradi-bez-jmen.pdf">Kompletní výsledky
+						Purkiády 2015
+						ve formátu pdf.</a></button>
 				</p>
 			</div>
 		</div>
@@ -656,8 +665,9 @@
 					</tbody>
 				</table>
 				<p>
-					<a href="http://purkiada.sspbrno.cz/soubory/purkiada2014-poradi-bez-jmen.pdf">Kompletní výsledky Purkiády 2014
-						ve formátu pdf.</a>
+					<button class="btn btn-secondary"><a href="http://purkiada.sspbrno.cz/soubory/purkiada2014-poradi-bez-jmen.pdf">Kompletní výsledky
+						Purkiády 2014
+						ve formátu pdf.</a></button>
 				</p>
 
 			</div>
@@ -757,8 +767,9 @@
 
 
 				<p>
-					<a href="http://purkiada.sspbrno.cz/soubory/purkiada2013-poradi-bez-jmen.pdf">Výsledky Purkiády 2013 ve
-						formátu pdf.</a>
+					<button class="btn btn-secondary"><a href="http://purkiada.sspbrno.cz/soubory/purkiada2013-poradi-bez-jmen.pdf">Výsledky Purkiády 2013
+						ve
+						formátu pdf.</a></button>
 				</p>
 
 
@@ -846,12 +857,10 @@
 				</table>
 
 				<p>
-					<a href="http://purkiada.sspbrno.cz/soubory/purkiada2011-poradi-bez-jmen.pdf">Výsledky Purkiády 2011 ve
-						formátu pdf.</a>
+					<button class="btn btn-secondary"><a href="http://purkiada.sspbrno.cz/soubory/purkiada2011-poradi-bez-jmen.pdf">Výsledky Purkiády 2011
+						ve
+						formátu pdf.</a></button>
 				</p>
-
-
-
 			</div>
 		</div>
 		<p>
@@ -941,10 +950,10 @@
 					</tbody>
 				</table>
 				<p>
-					<a href="http://purkiada.sspbrno.cz/soubory/purkiada2010-poradi.pdf">Výsledky Purkiády 2010 ve formátu
-						pdf.</a>
+					<button class="btn btn-secondary"><a href="http://purkiada.sspbrno.cz/soubory/purkiada2010-poradi.pdf">Výsledky Purkiády 2010 ve
+						formátu
+						pdf.</a></button>
 				</p>
-
 			</div>
 		</div>
 		<p>
@@ -1027,19 +1036,10 @@
 						</tr>
 					</tbody>
 				</table>
-
 			</div>
 		</div>
-
-
 	</div>
 
-
-
-	<!-- <img src="assets/img/logo-2.png"> -->
-	<script src="./assets/js/vendors.js"></script>
 	<script src="./assets/js/app.js"></script>
-	<script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
 </body>
-
 </html>

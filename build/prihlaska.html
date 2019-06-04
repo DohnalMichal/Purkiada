@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="assets/css/main.min.css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
 
   <style>
     body {
@@ -17,11 +18,16 @@
       width: 100%;
       margin: 0;
       background-attachment: fixed;
-      overflow-x: hidden;
-      overflow-y: scroll;
+      overflow: hidden;
     }
     header {
       background: none;
+    }
+    @media (max-width: 786px){  
+      .btn, .btn-primary, button {
+        width: 276px;
+        max-width: 276px;
+      }
     }
   </style>
 </head>
@@ -30,7 +36,7 @@
   <header>
     <nav class="nav">
       <div class="logo">
-        <a href="#"><img src="assets/img/logo.svg" width="160px" alt="logo"></a>
+        <a href="index.html"><img src="assets/img/logo.svg" width="160px" alt="logo"></a>
       </div>
       <div class="menu">
         <ul>
@@ -46,16 +52,16 @@
       </div>
     </nav>
   </header>
-
+  
     <form>
       <div class="form-group">
           <label for="name">Jméno*</label><br>
-          <input type="email" class="form-control" id="name" aria-describedby="name" aria-required="true"
+          <input type="text" class="form-control" id="name" aria-describedby="name" aria-required="true"
             placeholder="Jméno">    
       </div>
       <div class="form-group">
           <label for="surname">Příjmení*</label><br>
-          <input type="email" class="form-control" id="surname" aria-describedby="surname" aria-required="true"
+          <input type="text" class="form-control" id="surname" aria-describedby="surname" aria-required="true"
             placeholder="Příjmení">    
       </div>
       <div class="form-group">
@@ -70,16 +76,12 @@
       </div>
       <div class="form-check">
         <input type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label" for="exampleCheck1">Souhlasím s podmínkami o zpracování osobních údajů</label>
+        <label class="form-check-label" for="exampleCheck1">Souhlasím s podmínkami o zpracování osobních údajů</label>  
       </div>
       <button type="submit" class="btn btn-primary">Závazně přihlásit</button>
     </form>
-  
 
-  <!-- <img src="assets/img/logo-2.png"> -->
-  <script src="./assets/js/vendors.js"></script>
   <script src="./assets/js/app.js"></script>
-  <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
 </body>
 
 </html>

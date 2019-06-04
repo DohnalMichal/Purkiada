@@ -1,32 +1,3 @@
-// function showNav(){
-//     console.log("this is working");
-//     var x = document.getElementById("responsive-nav");
-//     if (x.className === "responsive-nav"){
-//         x.className += " showNav";
-//     } else {
-//         x.className = "responsive-nav";
-//     }
-// }
-
-
-// var navButton = document.getElementById("nav-toggle-button");
-
-// function toggleNavDisplay(event) {
-//     // prevent hyperlink from running
-//     event.preventDefault();
-
-//     // get the resonsive-nav container
-//     var responsiveNav = document.getElementById("responsive-nav");
-
-//     // toggle the showNav CSS on the responsive nav container
-//     // if the showNav class is there, it is removed; else it is added
-//     // with a single property: toggle
-//     responsiveNav.classList.toggle("showNav");
-// }
-
-// navButton.addEventListener("click", toggleNavDisplay);
-
-
 $(document).ready(function() {
     $(".menu-icon").on("click", function() {
           $("nav ul").toggleClass("showing");
@@ -34,7 +5,6 @@ $(document).ready(function() {
 });
 
 // Scrolling Effect
-
 $(window).on("scroll", function() {
     if($(window).scrollTop()) {
           $('nav').addClass('black');
@@ -44,7 +14,6 @@ $(window).on("scroll", function() {
           $('nav').removeClass('black');
     }
 })
-
 
 const $menu = $(".menu-icon");
 
@@ -60,16 +29,13 @@ $('.toggle').on('click', () => {
   $menu.toggleClass('showing');
 });
 
-
-
-// Dropdown menu
+//Dropdown menu
 
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
 function myFunction() {
       document.getElementById("myDropdown").classList.toggle("show");
     }
-    
     // Close the dropdown if the user clicks outside of it
     window.onclick = function(event) {
       if (!event.target.matches('.dropbtn')) {
@@ -83,12 +49,19 @@ function myFunction() {
         }
       }
     }
-// $(document).on("click", function(e){
-//       if( 
-//         $(e.target).closest(".menu-icon").length == 0 &&
-//         $(".menu-icon").hasClass("showing") &&
-//         $(e.target).closest(".menu-icon").length == 0
-//       ){
-//         $('.menu').toggleClass('showing');
-//       }
-//     });
+
+
+//Scroll reveal
+
+//Main page
+ScrollReveal().reveal('.headline', { distance: '20px'});
+ScrollReveal().reveal('.text, .description p', { delay: 200 , duration: 1000, distance: '20px'});
+ScrollReveal().reveal('.description a', { delay: 300 , duration: 1200, distance: '20px'});
+//Nav
+ScrollReveal().reveal('nav', { duration: 800, distance: '-10px'});
+//Prihlaska
+ScrollReveal().reveal('form', { delay: 200, duration: 1000, distance: '20px' });
+//Zadani & Vysledky
+ScrollReveal().reveal('.zadani, .vysledky', { delay: 200, duration: 800, distance: '20px'});
+// ScrollReveal().reveal('.zadani .btn', { delay: 300, duration: 1000, distance: '20px'});
+// ScrollReveal().reveal('.vysledky h1', { delay: 200, duration: 800, distance: '20px'});

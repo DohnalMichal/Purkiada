@@ -10,6 +10,10 @@ $Purkcolor: #00833e;
 @import "prihlaska.scss";
 // @import "information.scss";
 
+html.sr .load-hidden {
+    visibility: hidden;
+}
+
 body{
 	margin: 0;
 	font-family: 'Open Sans', sans-serif;

@@ -1,186 +1,215 @@
 <!DOCTYPE html>
 <html lang="cs">
+
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="Description" content="Stránky školní soutěže Purkiáda">
   <meta charset="UTF-8">
   <title>Purkiáda - zadání</title>
   <!-- Bootstap -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- My CSS -->
-  <link rel="stylesheet" href="assets/css/main.min.css"/> 
+  <link rel="stylesheet" href="assets/css/main.min.css" />
   <!-- scripts -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/scrollreveal"></script> <!-- Scroll reveal-->
   <style>
-    body{
-	  background: url("../assets/img/zadani1.jpg") no-repeat center center;
-	  background-size: cover;
-	  width: 100%;
-    margin: 0;
-    background-attachment:fixed;
-    overflow-x: hidden;
-    overflow-y: scroll;
-}
-    header{
+    body {
+      background: url("../assets/img/zadani1.jpg") no-repeat center center;
+      background-size: cover;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      width: 100%;
+      margin: 0;
+      background-attachment: fixed;
+      overflow-x: hidden;
+      overflow-y: scroll;
+    }
+
+    header {
       background: none;
     }
+    @media (max-width: 786px){
+      .btn-primary, .card {
+        width: 400px;
+      }
+  }
   </style>
 </head>
+
 <body>
   <header>
-		 <nav>
-        <div class="logo">
-          <a href="index.html"><img src="assets/img/logo.svg" width="160px" alt="logo"></a>
-        </div>
-          <div class="menu">
-          <ul>
-            <li><a href="prihlaska.html">Přihláška</a></li>
-            <li><a href="zadani.html">Zadání</a></li>
-            <li><a href="vysledky.html">Výsledky</a></li>
-            <li><a href="fotogalerie.html">Fotogalerie</a></li>
-            <li><a href="informace.html">Informace</a></li>
+    <nav>
+      <div class="logo">
+        <a href="index.html"><img src="assets/img/logo.svg" width="160px" alt="logo"></a>
+      </div>
+      <div class="menu">
+        <ul>
+          <li><a href="prihlaska.html">Přihláška</a></li>
+          <li><a href="zadani.html">Zadání</a></li>
+          <li><a href="vysledky.html">Výsledky</a></li>
+          <li><a href="fotogalerie.html">Fotogalerie</a></li>
+          <li><a href="informace.html">Informace</a></li>
         </ul>
-        </div>
-        <div class="menu-icon">
-				  <i class="fa fa-bars fa-2x"></i>
-        </div>
+      </div>
+      <div class="menu-icon">
+        <i class="fa fa-bars fa-2x"></i>
+      </div>
     </nav>
   </header>
 
   <div class="zadani">
-      <h1>Zadání</h1>
-      <p style="margin-bottom: 40px;">Zadání z minulých let:</p>
+    <h1 class="headline">Zadání</h1>
+    <p class="text" style="margin-bottom: 40px;">Zadání z minulých let:</p>
 
-      <p>
-        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse2019" aria-expanded="false" aria-controls="#collapse2019">
-          2019
-        </button>
-      </p>
-      <div class="collapse" id="collapse2019">
-        <div class="card card-body">
-            <a href="#">Zadání</a>
-            <a href="#">Záznamový list</a>
-            <a href="#">Zadání a nápovědy úloh</a>
-            <a href="#">Výsledky ankety</a>
-        </div>
+    <p>
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse2019"
+        aria-expanded="false" aria-controls="#collapse2019">
+        2019
+      </button>
+    </p>
+    <div class="collapse" id="collapse2019">
+      <div class="card card-body">
+        <a href="#">Zadání</a>
+        <a href="#">Záznamový list</a>
+        <a href="#">Zadání a nápovědy úloh</a>
+        <a href="#">Výsledky ankety</a>
       </div>
-      <p>
-        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse2018" aria-expanded="false" aria-controls="collapse2018">
-          2018
-        </button>
-      </p>
-      <div class="collapse" id="collapse2018">
-        <div class="card card-body">
-          <a href="#">Zadání</a>
-          <a href="#">Záznamový list</a>
-          <a href="#">Zadání a nápovědy úloh</a>
-          <a href="#">Řešení</a>    
-        </div>
-      </div> 
-      <p>
-        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse2017" aria-expanded="false" aria-controls="collapse2017">
-          2017
-        </button>
-      </p>
-      <div class="collapse" id="collapse2017">
-        <div class="card card-body">
-          <a href="#">Zadání</a>
-          <a href="#">Záznamový list</a>
-          <a href="#">Zadání a nápovědy úloh</a>
-          <a href="#">Řešení</a>    
-        </div>
+    </div>
+    <p>
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse2018"
+        aria-expanded="false" aria-controls="collapse2018">
+        2018
+      </button>
+    </p>
+    <div class="collapse" id="collapse2018">
+      <div class="card card-body">
+        <a href="#">Zadání</a>
+        <a href="#">Záznamový list</a>
+        <a href="#">Zadání a nápovědy úloh</a>
+        <a href="#">Řešení</a>
       </div>
-      <p>
-        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse2016" aria-expanded="false" aria-controls="collapse2016">
-          2016
-        </button>
-      </p>
-      <div class="collapse" id="collapse2016">
-        <div class="card card-body">
-          <a href="#">Zadání</a>
-          <a href="#">Záznamový list</a>
-          <a href="#">Zadání a nápovědy úloh</a>
-          <a href="#">Řešení</a>    
-        </div>
+    </div>
+    <p>
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse2017"
+        aria-expanded="false" aria-controls="collapse2017">
+        2017
+      </button>
+    </p>
+    <div class="collapse" id="collapse2017">
+      <div class="card card-body">
+        <a href="#">Zadání</a>
+        <a href="#">Záznamový list</a>
+        <a href="#">Zadání a nápovědy úloh</a>
+        <a href="#">Řešení</a>
       </div>
-      <p>
-        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse2015" aria-expanded="false" aria-controls="collapse2015">
-          2015
-        </button>
-      </p>
-      <div class="collapse" id="collapse2015">
-        <div class="card card-body">
-          <a href="#">Zadání</a>
-          <a href="#">Záznamový list</a>
-          <a href="#">Zadání a nápovědy úloh</a>
-          <a href="#">Řešení</a>    
-        </div>
+    </div>
+    <p>
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse2016"
+        aria-expanded="false" aria-controls="collapse2016">
+        2016
+      </button>
+    </p>
+    <div class="collapse" id="collapse2016">
+      <div class="card card-body">
+        <a href="#">Zadání</a>
+        <a href="#">Záznamový list</a>
+        <a href="#">Zadání a nápovědy úloh</a>
+        <a href="#">Řešení</a>
       </div>
-      <p>
-        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse2014" aria-expanded="false" aria-controls="collapse2014">
-          2014
-        </button>
-      </p>
-      <div class="collapse" id="collapse2014">
-        <div class="card card-body">
-          <a href="#">Zadání</a>
-          <a href="#">Záznamový list</a>
-          <a href="#">Zadání a nápovědy úloh</a>
-          <a href="#">Řešení</a>    
-        </div>
+    </div>
+    <p>
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse2015"
+        aria-expanded="false" aria-controls="collapse2015">
+        2015
+      </button>
+    </p>
+    <div class="collapse" id="collapse2015">
+      <div class="card card-body">
+        <a href="#">Zadání</a>
+        <a href="#">Záznamový list</a>
+        <a href="#">Zadání a nápovědy úloh</a>
+        <a href="#">Řešení</a>
       </div>
-      <p>
-        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse2013" aria-expanded="false" aria-controls="collapse2013">
-          2013
-        </button>
-      </p>
-      <div class="collapse" id="collapse2013">
-        <div class="card card-body">
-          <a href="#">Zadání</a>
-          <a href="#">Záznamový list</a>
-          <a href="#">Zadání a nápovědy úloh</a>
-          <a href="#">Řešení</a>    
-        </div>
+    </div>
+    <p>
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse2014"
+        aria-expanded="false" aria-controls="collapse2014">
+        2014
+      </button>
+    </p>
+    <div class="collapse" id="collapse2014">
+      <div class="card card-body">
+        <a href="#">Zadání</a>
+        <a href="#">Záznamový list</a>
+        <a href="#">Zadání a nápovědy úloh</a>
+        <a href="#">Řešení</a>
       </div>
-      <p>
-        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse2011" aria-expanded="false" aria-controls="collapse2011">
-          2011
-        </button>
-      </p>
-      <div class="collapse" id="collapse2011">
-        <div class="card card-body">
-          <a href="#">Zadání</a>
-          <a href="#">Záznamový list</a>
-          <a href="#">Zadání a nápovědy úloh 3 až 5</a>
-          <a href="#">Řešení</a>    
-        </div>
+    </div>
+    <p>
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse2013"
+        aria-expanded="false" aria-controls="collapse2013">
+        2013
+      </button>
+    </p>
+    <div class="collapse" id="collapse2013">
+      <div class="card card-body">
+        <a href="#">Zadání</a>
+        <a href="#">Záznamový list</a>
+        <a href="#">Zadání a nápovědy úloh</a>
+        <a href="#">Řešení</a>
       </div>
-      <p>
-        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse2010" aria-expanded="false" aria-controls="collapse2010">
-          2010
-        </button>
-      </p>
-      <div class="collapse" id="collapse2010">
-        <div class="card card-body">
-          <a href="#">Zadání</a>
-          <a href="#">Záznamový list</a>
-        </div>
+    </div>
+    <p>
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse2011"
+        aria-expanded="false" aria-controls="collapse2011">
+        2011
+      </button>
+    </p>
+    <div class="collapse" id="collapse2011">
+      <div class="card card-body">
+        <a href="#">Zadání</a>
+        <a href="#">Záznamový list</a>
+        <a href="#">Zadání a nápovědy úloh 3 až 5</a>
+        <a href="#">Řešení</a>
       </div>
-      <p>
-        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse2009" aria-expanded="false" aria-controls="collapse2009">
-          2009
-        </button>
-      </p>
-      <div class="collapse" id="collapse2009">
-        <div class="card card-body">
-          <a href="#">Zadání</a>
-        </div>
+    </div>
+    <p>
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse2010"
+        aria-expanded="false" aria-controls="collapse2010">
+        2010
+      </button>
+    </p>
+    <div class="collapse" id="collapse2010">
+      <div class="card card-body">
+        <a href="#">Zadání</a>
+        <a href="#">Záznamový list</a>
       </div>
+    </div>
+    <p>
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse2009"
+        aria-expanded="false" aria-controls="collapse2009">
+        2009
+      </button>
+    </p>
+    <div class="collapse" id="collapse2009">
+      <div class="card card-body">
+        <a href="#">Zadání</a>
+      </div>
+    </div>
   </div>
   <script src="./assets/js/app.js"></script>
 </body>
+
 </html>
