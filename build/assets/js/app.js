@@ -63,5 +63,8 @@ ScrollReveal().reveal('nav', { duration: 800, distance: '-10px'});
 ScrollReveal().reveal('form', { delay: 200, duration: 1000, distance: '20px' });
 //Zadani & Vysledky
 ScrollReveal().reveal('.zadani, .vysledky', { delay: 200, duration: 800, distance: '20px'});
-// ScrollReveal().reveal('.zadani .btn', { delay: 300, duration: 1000, distance: '20px'});
-// ScrollReveal().reveal('.vysledky h1', { delay: 200, duration: 800, distance: '20px'});
+
+// MDB Lightbox Init
+$(function () {
+  $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
+  });

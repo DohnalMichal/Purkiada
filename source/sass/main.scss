@@ -8,7 +8,8 @@ $Purkcolor: #00833e;
 @import "zadani.scss";
 @import "vysledky.scss";
 @import "prihlaska.scss";
-// @import "information.scss";
+@import "info.scss";
+@import "foto.scss";
 
 html.sr .load-hidden {
     visibility: hidden;
