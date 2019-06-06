@@ -38,19 +38,46 @@ nav {
 			display: inline-block;
 			padding: 16px 15px;
 			a {
+				position: relative;
 				text-decoration: none;
 				color: #fff;
-				font-size: 16px;
 			}
-			a:hover{
-				text-decoration: none;
-				color: #ccc;
-			}
+			
 		}
 		li:last-child{
 			margin-right: 25px;
 		}
 	}
+}
+//Hover efect for links
+li > a {
+	position: relative;
+	color: #fff;
+	text-decoration: none;
+	font-size: 16px;
+}
+li > a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+li > a:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 1.5px;
+	bottom: 0;
+	left: 0;
+	background-color: #fff;
+	visibility: hidden;
+	-webkit-transform: scaleX(0);
+	transform: scaleX(0);
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;
+}
+li > a:hover:before {
+	visibility: visible;
+	-webkit-transform: scaleX(1);
+	transform: scaleX(1);
 }
 
 nav.black ul {
@@ -70,13 +97,11 @@ nav.black ul {
 }
 
 @media(max-width: 786px) {
-
 	.logo {
 		position: fixed;
 		top: 0;
 		margin-top: 8px;
 	}
-
 	nav{
 	 	ul{
 			max-height: 0px;
@@ -97,13 +122,28 @@ nav.black ul {
 			}
 		}
 	}
-
 	.showing {
 		max-height: 34em;
 	}
-
 	.menu-icon {
 		display: block;
 		padding: 10px 24px 0px;
+	}
+}
+@media only screen 
+and (max-width: 786px) 
+and (orientation: landscape){
+	nav ul {
+		line-height: 50px;
+	}
+}
+@media only screen 
+and (max-width: 568px) 
+and (orientation: landscape){
+	nav ul {
+		line-height: 40px;
+	}
+	.menu-icon {
+		height: 70px;
 	}
 }

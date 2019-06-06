@@ -17,77 +17,111 @@ form {
         margin: 0;
         padding: 0;
     }
-}
-
-.form-group {
-    width: 90%;
-    margin: 8px 0px;
-    input {
-        // width: 100%;
-        height: 20px;
+    .form-group {
+        width: 90%;
+        margin: 8px 0px;
+        input {
+            // width: 100%;
+            height: 20px;
+        }
     }
+    
+    .form-control {
+        display: block;
+        width: 100%;
+        height: calc(1.5em + .75rem + 2px);
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #495057;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        border-radius: .25rem;
+        transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    }
+    
+    .btn {
+        display: inline-block;
+        font-weight: 400;
+        // color: #212529;
+        color: white;
+        text-align: center;
+        vertical-align: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        background-color: transparent;
+        border: 1.5px solid rgba(255, 255, 255, 0.7);
+        border-radius: .25rem;
+        padding: 8px 25px;
+        font-size: 1rem;
+        line-height: 1.5;
+        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    }
+    .btn, .btn-primary {
+        background: none;
+    }
+    .btn-primary:hover {
+        background: rgba(209, 209, 209, 0.5);
+        cursor: pointer;
+    }
+    
+    [type=button], [type=reset], [type=submit], button {
+        -webkit-appearance: button;
+    }
+    
+    button, input {
+        overflow: visible;
+    }
+    
+    .form-check-input {
+        line-height: 20px;
+        cursor: pointer;
+    }  
 }
 
-.form-control {
-    display: block;
-    width: 100%;
-    height: calc(1.5em + .75rem + 2px);
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #495057;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid #ced4da;
-    border-radius: .25rem;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-}
-
-.btn {
-    display: inline-block;
-    font-weight: 400;
-    // color: #212529;
-    color: white;
-    text-align: center;
-    vertical-align: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    background-color: transparent;
-    border: 1px solid transparent;
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    border-radius: .25rem;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-}
-
-.btn-primary {
-    background-color: rgb(52, 152, 219);
-    cursor: pointer;
-}
-
-[type=button], [type=reset], [type=submit], button {
-    -webkit-appearance: button;
-}
-
-button, input {
-    overflow: visible;
-}
-
-.form-check-input {
-    line-height: 20px;
-    cursor: pointer;
-}
-
-
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
 @media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2) { 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
     form {
         top: 55%;
     }
 }
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+@media only screen 
+and (min-device-width: 375px) 
+and (max-device-width: 667px) 
+and (-webkit-min-device-pixel-ratio: 2) { 
+  form {
+      top: 54%;
+  }
+}
+@media only screen and (max-height: 680px) 
+      and (orientation: landscape){
+        .form-check-input {
+         top: 60%;
+        }
+    }
+    @media only screen and (max-height: 550px) 
+      and (orientation: landscape){
+        .form-check-input {
+         top: 70%;
+        }
+    }
+    @media only screen and (max-height: 490px) 
+      and (orientation: landscape){
+        .form-check-input {
+         top: 80%;
+        }
+    }
+    @media only screen and (max-height: 410px) 
+      and (orientation: landscape){
+        .form-check-input {
+         top: 90%;
+        }
+    }

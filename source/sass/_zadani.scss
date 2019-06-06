@@ -41,7 +41,6 @@
         text-decoration: none;
         color: rgb(255, 255, 255);
         padding: 8px 25px;
-        // border: 1px solid rgba(255, 255, 255, 0.521);
         border-radius: .25rem;
         transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
     }
@@ -53,17 +52,43 @@
     .btn-primary {
         width: 400px;
         height: 40px;
-        // backgrou-nd-color: rgba(49, 119, 177, 0.664);
         background-color: rgba(0, 123, 255, 0.745);
         border-bottom: 1px solid rgba(255, 255, 255, 0.521);
     }
+    
 }
 
-@media(max-width: 786px) {
-    .btn-primary, .card{
-        width: 80vw;
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+    /* Portrait and Landscape */
+    @media only screen 
+    and (min-device-width: 320px) 
+    and (max-device-width: 568px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+        .zadani {
+            margin-top: 50px;
+        }
     }
-    .zadani {
-        top: 65%;
+    @media only screen and (max-height: 680px) 
+      and (orientation: landscape){
+        .zadani {
+         top: 60%;
+        }
     }
-}
+    @media only screen and (max-height: 550px) 
+      and (orientation: landscape){
+        .zadani {
+         top: 70%;
+        }
+    }
+    @media only screen and (max-height: 490px) 
+      and (orientation: landscape){
+        .zadani {
+         top: 80%;
+        }
+    }
+    @media only screen and (max-height: 410px) 
+      and (orientation: landscape){
+        .zadani {
+         top: 90%;
+        }
+    }

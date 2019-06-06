@@ -20,13 +20,19 @@
         appearance: none;
         margin: 0;
         text-decoration: none;
-        color: #fff;
+        background: none;
+        color: white;
         padding: 8px 25px;
-        border: 1px solid rgba(255, 255, 255, 0.521);
+        border: 1.5px solid rgba(255, 255, 255, 0.7);
         border-radius: .25rem;
         transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
     }
-    .btn-secondary:hover, .btn-primary:hover{
+    .btn-secondary:hover {
+        background: rgba(209, 209, 209, 0.5);
+        cursor: pointer;
+        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    }
+    .btn-primary:hover {
         background: #0069d9;
         cursor: pointer;
         transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
@@ -38,16 +44,10 @@
         appearance: none;
         width: 800px;
         height: 40px;
-        // background-color: rgba(52, 152, 219, 0.753);
         background-color: rgba(0, 123, 255, 0.745);
         border-bottom: 1px solid rgba(255, 255, 255, 0.521);
-        //border-bottom: 1px solid #ccc;
-        
     }
 
-    // .btn-primary:focus {
-    //    // background: #0069d9;
-    // }
 
     thead{
         font-weight: bold;
@@ -61,16 +61,12 @@
         p {
             margin: 18px 0;
         }
-        // a {
-        //    // border: 1px solid rgba(255, 255, 255, 0.521);
-        // }
     }
 }   
 
 @media(max-width: 786px) {
     .btn-primary, .card{
         max-width: 80vw;
-        // width: 80vw;
     }
     .vysledky {
         top: 70%;
@@ -80,25 +76,72 @@
         width: 90%;
     }
 }
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .vysledky {
+        top: 60%;
+    }
+}
+@media only screen 
+    and (min-device-width: 320px) 
+    and (max-device-width: 568px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+        .vysledky {
+            margin-top: 50px;
+        }
+    }
+    @media only screen and (max-height: 680px) 
+      and (orientation: landscape){
+        .vysledky {
+         top: 60%;
+        }
+    }
+    @media only screen and (max-height: 550px) 
+      and (orientation: landscape){
+        .vysledky {
+         top: 70%;
+        }
+    }
+    @media only screen and (max-height: 490px) 
+      and (orientation: landscape){
+        .vysledky {
+         top: 80%;
+        }
+    }
+    @media only screen and (max-height: 410px) 
+      and (orientation: landscape){
+        .vysledky {
+         top: 90%;
+        }
+    }
+    /* ----------- iPad 3, 4 and Pro 9.7" ----------- */
 
-@media 
-only screen and (max-width: 760px),
+/* Portrait and Landscape */
+@media only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1024px) 
+and (-webkit-min-device-pixel-ratio: 2) {
+    .vysledky {
+        top: 50%;
+    }
+}
+/* ------------Responsive table ---------------*/
+@media only screen and (max-width: 760px),
 (min-device-width: 768px) and (max-device-width: 1024px)  {
-
 	/* Force table to not be like tables anymore */
 	table, thead, tbody, th, td, tr { 
         display: block; 
 	}
-	
 	/* Hide table headers (but not display: none;, for accessibility) */
 	thead tr { 
 		position: absolute;
 		top: -9999px;
 		left: -9999px;
 	}
-	
 	tr { border-bottom: 1px solid #ccc; }
-	
 	td { 
 		/* Behave  like a "row" */
 		border: none;
@@ -106,7 +149,6 @@ only screen and (max-width: 760px),
 		position: relative;
 		padding-left: 40%; 
 	}
-	
 	td:before { 
 		/* Now like a table header */
 		position: absolute;
@@ -117,10 +159,7 @@ only screen and (max-width: 760px),
 		padding-right: 10px; 
 		white-space: nowrap;
 	}
-	
-	/*
-	Label the data
-	*/
+	//Labels for data
 	td:nth-of-type(1):before { content: "Umístění"; font-weight: bold; }
 	td:nth-of-type(2):before { content: "Jméno"; font-weight: bold; }
 	td:nth-of-type(3):before { content: "Příjmení"; font-weight: bold;}

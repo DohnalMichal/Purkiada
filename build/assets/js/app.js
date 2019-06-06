@@ -63,6 +63,9 @@ ScrollReveal().reveal('nav', { duration: 800, distance: '-10px'});
 ScrollReveal().reveal('form', { delay: 200, duration: 1000, distance: '20px' });
 //Zadani & Vysledky
 ScrollReveal().reveal('.zadani, .vysledky', { delay: 200, duration: 800, distance: '20px'});
+//Fotogalerie
+ScrollReveal().reveal('.row', { delay: 200, duration: 800, distance: '20px'});
+
 
 // MDB Lightbox Init
 $(function () {
