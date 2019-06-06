@@ -447,17 +447,15 @@ form {
   transform: translateX(-50%);
   left: 50%;
   text-align: justify;
-  margin-top: 100px; }
+  margin-top: 100px;
+  background: rgba(255, 255, 255, 0.863);
+  padding: 20px; }
 
 .informace h2 {
-  color: #fff; }
+  color: black; }
 
 .informace p {
-  color: #fff; }
-
-.wrapper {
-  background-color: white;
-  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); }
+  color: black; }
 
 .container {
   position: absolute;
