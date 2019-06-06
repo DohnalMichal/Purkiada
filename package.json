@@ -27,6 +27,7 @@
         "gulp-uglify": "^3.0.1"
     },
     "dependencies": {
+        "@myspace-nu/jquery.fancytable": "^1.0.9",
         "braces": "^2.3.2"
     }
 }
