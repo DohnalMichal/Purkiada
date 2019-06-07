@@ -101,6 +101,8 @@ nav.black ul {
       padding: 0; }
   nav li:first-child {
     margin-top: 45px; }
+  nav li:first-child {
+    margin-top: 60px; }
   nav .black ul {
     background: rgba(17, 17, 17, 0.74); }
   .showing {
