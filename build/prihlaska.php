@@ -37,6 +37,16 @@
 </head>
 
 <body>
+<?php 
+	/* ----- DATABASE CONNECTION ----- */
+    require_once "./config.php";
+    $mysqli = new mysqli($db_host, $db_user, $db_pass, $db_db);
+
+    if (mysqli_connect_errno()) {
+        printf("Connect failed: %s\n", mysqli_connect_error());
+        exit();}
+	$mysqli->set_charset("utf8");
+?>
   <header>
     <nav class="nav">
       <div class="logo">
@@ -56,35 +66,41 @@
       </div>
     </nav>
   </header>
-  
-    <form>
+    <form method="post" action="#">
       <div class="form-group">
-          <label for="name">Jméno*</label><br>
-          <input type="text" class="form-control" id="name" aria-describedby="name" aria-required="true"
-            placeholder="Jméno">    
+          <label for="name">Jméno</label><br>
+          <input type="text" class="form-control" name="name" aria-describedby="name" aria-required="true"
+            placeholder="Jméno" required>    
       </div>
       <div class="form-group">
-          <label for="surname">Příjmení*</label><br>
-          <input type="text" class="form-control" id="surname" aria-describedby="surname" aria-required="true"
-            placeholder="Příjmení">    
+          <label for="surname">Příjmení</label><br>
+          <input type="text" class="form-control" name="surname" aria-describedby="surname" aria-required="true"
+            placeholder="Příjmení" required>    
       </div>
       <div class="form-group">
-        <label for="email">E-mail*</label><br>
-        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" aria-required="true"
-          placeholder="Zadejte e-mailovou adresu">
-        <small id="emailHelp" class="form-text text-muted">Vaši e-mailovou adresu nikdy nesdílíme s nikým jiným.</small><br>
+        <label for="email">E-mail</label><br>
+        <input type="email" class="form-control" name="email" aria-describedby="emailHelp" aria-required="true"
+          placeholder="Zadejte e-mailovou adresu" required>
       </div>
       <div class="form-group">
-        <label for="school">Škola*</label><br>
-        <input type="text" class="form-control" id="school" aria-describedby="school" aria-required="true" placeholder="Škola"><p><small>* povinné pole</small></p>
+        <label for="school">Škola</label><br>
+        <input type="text" class="form-control" name="school" aria-describedby="school" aria-required="true" placeholder="Škola" required><p><small>Vaše údaje nikdy nesdílíme s nikým jiným.</small></p>
       </div>
       <div class="form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <input type="checkbox" class="form-check-input" name="exampleCheck1" required>
         <label class="form-check-label" for="exampleCheck1">Souhlasím s podmínkami o zpracování osobních údajů</label>  
       </div>
       <button type="submit" class="btn btn-primary">Závazně přihlásit</button>
     </form>
-
+    <?php 
+	if(isset($_POST['name'])) {
+                $jmeno = $_POST['name'];
+                $prijmeni = $_POST['surname'];
+				$email = $_POST['email'];
+				$skola = $_POST['school'];
+	$sql = "INSERT INTO `purkiada` (jmeno, prijmeni, skola, email) VALUES ('" .$jmeno. "','" .$prijmeni. "','" .$skola. "','" .$email. "')";
+	$mysqli->query($sql);}
+	?>
   <script src="./assets/js/app.js"></script>
 </body>
 
