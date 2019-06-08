@@ -15,27 +15,9 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
   <link rel="manifest" href="/favicon_io/site.webmanifest">
   <style>
-    body {
-      background: url("assets/img/prihlaska.jpg") no-repeat center center;
-      background-size: cover;
-      width: 100%;
-      margin: 0;
-      background-attachment: fixed;
-      overflow: hidden;
-    }
-    header {
-      background: none;
-      height: 100px;
-    }
-    @media (max-width: 786px){  
-      .btn, .btn-primary, button {
-        width: 276px;
-        max-width: 276px;
-      }
-    }
+    body{background:url(assets/img/prihlaska.jpg) no-repeat center center;background-size:cover;width:100%;margin:0;background-attachment:fixed;overflow:hidden}header{background:0 0;height:100px}@media (max-width:786px){.btn,.btn-primary,button{width:276px;max-width:276px}}
   </style>
 </head>
-
 <body>
 <?php 
 	/* ----- DATABASE CONNECTION ----- */
@@ -48,7 +30,7 @@
 	$mysqli->set_charset("utf8");
 ?>
   <header>
-    <nav class="nav">
+    <nav class="nav load-hidden">
       <div class="logo">
         <a href="index.html"><img src="assets/img/logo.svg" width="160px" alt="logo"></a>
       </div>
@@ -66,7 +48,7 @@
       </div>
     </nav>
   </header>
-    <form method="post" action="#">
+    <form method="post" action="#" class="load-hidden">
       <div class="form-group">
           <label for="name">Jméno</label><br>
           <input type="text" class="form-control" name="name" aria-describedby="name" aria-required="true"
@@ -99,9 +81,9 @@
 				$email = $_POST['email'];
 				$skola = $_POST['school'];
 	$sql = "INSERT INTO `purkiada` (jmeno, prijmeni, skola, email) VALUES ('" .$jmeno. "','" .$prijmeni. "','" .$skola. "','" .$email. "')";
-	$mysqli->query($sql);}
+  $mysqli->query($sql);
+alert("Vaše přihláška byla odeslána.");}
 	?>
   <script src="./assets/js/app.js"></script>
 </body>
-
 </html>

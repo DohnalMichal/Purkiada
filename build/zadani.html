@@ -29,34 +29,13 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
   <link rel="manifest" href="/favicon_io/site.webmanifest">
   <style>
-    body {
-      background: url("assets/img/zadani1.jpg") no-repeat center center;
-      background-size: cover;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      width: 100%;
-      margin: 0;
-      background-attachment: fixed;
-      overflow-x: hidden;
-      overflow-y: scroll;
-    }
-
-    header {
-      background: none;
-      height: 100px;
-    }
-    @media (max-width: 786px){
-      .btn-primary, .card {
-        width: 400px;
-      }
-  }
+    body,html{background:url(assets/img/zadani1.jpg) no-repeat center center;background-size:cover;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-attachment:fixed}body{width:100%;margin:0;overflow-x:hidden;overflow-y:scroll}header{background:0 0;height:100px}@media (max-width:786px){.btn-primary,.card{width:400px}}
   </style>
 </head>
 
 <body>
   <header>
-    <nav>
+    <nav class="load-hidden">
       <div class="logo">
         <a href="index.html"><img src="assets/img/logo.svg" width="160px" alt="logo"></a>
       </div>
@@ -75,8 +54,8 @@
     </nav>
   </header>
   
-  <div class="zadani">
-    <h1 class="headline">Zadání</h1>
+  <div class="zadani load-hidden">
+    <h1 class="headline load-hidden">Zadání</h1>
     <p class="text" style="margin-bottom: 40px;">Zadání z minulých let:</p>
 
     <p>

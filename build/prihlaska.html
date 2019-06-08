@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="cs">
-
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="Description" content="Stránky školní soutěže Purkiáda">
@@ -15,30 +14,12 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
   <link rel="manifest" href="/favicon_io/site.webmanifest">
   <style>
-    body {
-      background: url("assets/img/prihlaska.jpg") no-repeat center center;
-      background-size: cover;
-      width: 100%;
-      margin: 0;
-      background-attachment: fixed;
-      overflow: hidden;
-    }
-    header {
-      background: none;
-      height: 100px;
-    }
-    @media (max-width: 786px){  
-      .btn, .btn-primary, button {
-        width: 276px;
-        max-width: 276px;
-      }
-    }
+    body,html{background:url(assets/img/prihlaska.jpg) no-repeat center center;background-size:cover;width:100%;margin:0;background-attachment:fixed;overflow:hidden}header{background:0 0;height:100px}@media (max-width:786px){.btn,.btn-primary,button{width:276px;max-width:276px}}
   </style>
 </head>
-
 <body>
   <header>
-    <nav class="nav">
+    <nav class="nav load-hidden">
       <div class="logo">
         <a href="index.html"><img src="assets/img/logo.svg" width="160px" alt="logo"></a>
       </div>
@@ -57,7 +38,7 @@
     </nav>
   </header>
   
-    <form>
+    <form onsubmit="alertFunction()">
       <div class="form-group">
           <label for="name">Jméno*</label><br>
           <input type="text" class="form-control" id="name" aria-describedby="name" aria-required="true"
@@ -87,5 +68,4 @@
 
   <script src="./assets/js/app.js"></script>
 </body>
-
 </html>

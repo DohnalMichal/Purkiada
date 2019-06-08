@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="cs">
-
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="Description" content="Stránky školní soutěže Purkiáda">
@@ -28,29 +27,12 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
   <link rel="manifest" href="/favicon_io/site.webmanifest">
-
   <style>
-    body {
-      background: url("assets/img/resultsbg.jpg") no-repeat center center;
-      background-size: cover;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      width: 100%;
-      margin: 0;
-      background-attachment: fixed;
-      overflow-x: hidden;
-      overflow-y: scroll;
-    }
-    header {
-      background: none;
-      height: 100px;
-    }
+    body,html{background:url(assets/img/resultsbg.jpg) no-repeat center center;background-size:cover;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-attachment:fixed;}body{width:100%;margin:0;overflow-x:hidden;overflow-y:scroll}header{background:0 0;height:100px}
   </style>
 </head>
-
 <body>
-  <nav>
+  <nav class="load-hidden">
     <div class="logo">
       <a href="index.html"><img src="assets/img/logo.svg" width="160px" alt="logo"></a>
     </div>
@@ -68,10 +50,9 @@
     </div>
   </nav>
 
-  <div class="vysledky">
-    <h1 class="headline">Výsledky</h1>
+  <div class="vysledky load-hidden">
+    <h1 class="headline load-hidden">Výsledky</h1>
     <p class="text" style="margin-bottom: 40px;">Výsledky z minulých let:</p>
-
     <p>
       <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse2019"
         aria-expanded="false" aria-controls="collapse2019">
@@ -269,7 +250,6 @@
               2019 ve
               formátu pdf.</a></button>
         </p>
-
       </div>
     </div>
     <p>
@@ -369,7 +349,6 @@
               Purkiády 2017
               ve formátu pdf.</a></button>
         </p>
-
       </div>
     </div>
     <p>
@@ -470,15 +449,12 @@
             </tr>
           </tbody>
         </table>
-
         <p>
           <button class="btn btn-secondary"><a
               href="http://purkiada.sspbrno.cz/soubory/purkiada2016-poradi-bez-jmen.pdf">Kompletní výsledky
               Purkiády 2016
               ve formátu pdf.</a></button>
         </p>
-
-
       </div>
     </div>
     <p>
@@ -579,7 +555,6 @@
             </tr>
           </tbody>
         </table>
-
         <p>
           <button class="btn btn-secondary"><a
               href="http://purkiada.sspbrno.cz/soubory/purkiada2015-poradi-bez-jmen.pdf">Kompletní výsledky
@@ -684,7 +659,6 @@
               Purkiády 2014
               ve formátu pdf.</a></button>
         </p>
-
       </div>
     </div>
     <p>
@@ -779,16 +753,12 @@
             </tr>
           </tbody>
         </table>
-
-
         <p>
           <button class="btn btn-secondary"><a
               href="http://purkiada.sspbrno.cz/soubory/purkiada2013-poradi-bez-jmen.pdf">Výsledky Purkiády 2013
               ve
               formátu pdf.</a></button>
         </p>
-
-
       </div>
     </div>
     <p>
@@ -871,7 +841,6 @@
             </tr>
           </tbody>
         </table>
-
         <p>
           <button class="btn btn-secondary"><a
               href="http://purkiada.sspbrno.cz/soubory/purkiada2011-poradi-bez-jmen.pdf">Výsledky Purkiády 2011
@@ -1057,8 +1026,6 @@
       </div>
     </div>
   </div>
-
   <script src="./assets/js/app.js"></script>
 </body>
-
 </html>

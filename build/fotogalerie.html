@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="cs">
-
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="Description" content="Stránky školní soutěže Purkiáda">
@@ -16,25 +15,12 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
   <link rel="manifest" href="/favicon_io/site.webmanifest">
-
   <style>
-    body {
-      background: url("assets/img/foto-1.jpg") no-repeat center center;
-      background-size: cover;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-attachment: fixed;
-      width: 100%;
-      margin: 0;
-      overflow-x: hidden;
-      overflow-y: scroll;
-    }
+    body,html{background:url(assets/img/foto-1.jpg) no-repeat center center;background-size:cover;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-attachment:fixed}body{width:100%;margin:0;overflow-x:hidden;overflow-y:scroll}
   </style>
 </head>
-
 <body>
-  <nav>
+  <nav class="load-hidden">
     <div class="logo">
       <a href="index.html"><img src="assets/img/logo.svg" width="160px" alt="logo"></a>
     </div>
@@ -53,7 +39,7 @@
   </nav>
 
   <div class="container">
-    <div class="row">
+    <div class="row load-hidden">
       <div class="col-sm">
         <div class="card" style="width: 18rem;">
           <img src="assets/img/foto-2017.jpg" class="card-img-top" width="286px"" height=" 191px"alt="
@@ -85,7 +71,7 @@
         </div>
       </div>
     </div>
-    <div class="row">
+    <div class="row load-hidden">
       <div class="col-sm">
         <div class="card" style="width: 18rem;">
           <img src="assets/img/foto-2014.jpg" class="card-img-top" width="286px"" height=" 191px"alt="
@@ -107,7 +93,7 @@
         </div>
       </div>
     </div>
-    <div class="row">
+    <div class="row load-hidden">
       <div class="col-sm">
         <div class="card" style="width: 18rem;">
           <img src="assets/img/foto-2011.jpg" class="card-img-top" width="286px"" height=" 191px"alt="
@@ -140,8 +126,6 @@
       </div>
     </div>
   </div>
-
   <script src="./assets/js/app.js"></script>
 </body>
-
 </html>
