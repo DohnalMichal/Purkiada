@@ -1,5 +1,6 @@
 
 # Created by https://www.gitignore.io/api/osx,node
+/SOCIAL-ICONS
 
 ### Node ###
 # Logs
@@ -104,7 +105,8 @@ Temporary Items
 
 # Word temporary
 ~$*.doc*
-
+~$*.docx*
+;.docx
 # Word Auto Backup File
 Backup of *.doc*
 
