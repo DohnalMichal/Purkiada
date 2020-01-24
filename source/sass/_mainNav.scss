@@ -2,14 +2,41 @@
 $black: rgba(17, 17, 17, 0.74);
 $white: #f8f8f8;
 header{
+	background-size: cover;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+	width: 100%;
+	height: auto;
+	margin: 0;
+}
+//Zkosení
+.slanted{
 	background: url("../img/uglybackground.jpg") no-repeat center center;
 	background-size: cover;
 	-webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
 	width: 100%;
-	height: 100vh;
-	margin: 0;
+	height: 130vh;
+	margin: 0px 0px 200px 0px;
+}
+.slanted::after{
+	content: "";
+    background: #fff;
+    height: 200px;
+    -webkit-transform: skewY(-5deg);
+    -ms-transform: skewY(-5deg);
+    transform: skewY(-5deg);
+    position: absolute;
+    left: 0;
+    bottom: -300px;
+    right: 0;
+    z-index: 1;
+}
+
+section{
+	height: auto;
 }
 
 .logo {
