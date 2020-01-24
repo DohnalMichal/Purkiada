@@ -1,7 +1,9 @@
 
 # Created by https://www.gitignore.io/api/osx,node
-#Social icons
+#Social icons and other
 /SOCIAL-ICONS
+*.zip
+poznamky.txt
 
 ### Node ###
 # Logs
