@@ -1,5 +1,0 @@
-Větší mezery mezi řádky
-strukturovat text
-monochromatické ikony
-screen obrazovky s odkazem na mapu
-pop-up pro přihlášku
