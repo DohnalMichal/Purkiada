@@ -32,7 +32,7 @@ header {
   left: 0;
   bottom: -300px;
   right: 0;
-  z-index: 1; }
+  z-index: 0; }
 
 section {
   height: auto; }
@@ -147,10 +147,9 @@ nav.black ul {
     height: 70px; } }
 
 .description {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  margin-top: 9em;
+  width: 60%;
   text-align: center; }
   .description h1 {
     font-size: 48px;
@@ -173,8 +172,7 @@ nav.black ul {
 
 @media (max-width: 786px) {
   .description {
-    width: 80%;
-    top: 50%; } }
+    width: 80%; } }
 
 .card-body {
   margin-bottom: 12px; }
@@ -468,32 +466,34 @@ form {
   .form-check-input {
     top: 90%; } }
 
-.informace {
-  width: 70%;
-  position: absolute;
-  transform: translateX(-50%);
-  left: 50%;
-  text-align: justify;
-  margin: 100px 0;
-  padding: 20px 40px;
-  background: rgba(59, 59, 59, 0.178);
-  color: #fff; }
+.wrapper {
+  display: flex;
+  justify-content: space-evenly; }
+  .wrapper .information {
+    z-index: 2;
+    width: 50%; }
+    .wrapper .information p {
+      color: #6c757d; }
+    .wrapper .information h2 {
+      margin-top: 0;
+      color: #343a40; }
+  .wrapper img {
+    border-radius: 7px;
+    box-shadow: 0 5px 30px -5px rgba(0, 0, 0, 0.4);
+    margin: 0 2em; }
 
-#map {
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 60%;
-  height: 400px;
-  background-color: grey; }
-
-@media only screen and (max-width: 786px) {
-  #map {
-    width: 100%;
-    max-height: 300px; }
-  .informace {
-    padding: 20px;
-    width: 80%; } }
+@media screen and (max-width: 786px) {
+  .wrapper {
+    flex-direction: column; }
+    .wrapper .information {
+      margin: 0 auto 1.5em auto;
+      width: 90%; }
+    .wrapper img {
+      width: 60%;
+      height: auto;
+      margin: 0 auto; }
+  .second-wrapper {
+    flex-direction: column-reverse; } }
 
 .container {
   position: absolute;
@@ -540,14 +540,14 @@ section {
   display: -webkit-box; }
 
 .wrapper {
-  width: 100%;
+  width: 90%;
   max-width: 1000px;
   margin: 0 auto;
   position: relative; }
 
 @media screen and (max-width: 786px) {
   .wrapper {
-    margin: 0; }
+    margin: 0 auto; }
   #content {
     margin: 0; } }
 

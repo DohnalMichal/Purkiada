@@ -1,8 +1,9 @@
 .description{
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    margin: 0 auto;
+    margin-top: 9em;
+    width: 60%;
+    // left: 50%;
+    // transform: translate(-50%,-50%);
     text-align: center;
     h1{
         font-size: 48px;
@@ -37,7 +38,5 @@
 @media (max-width: 786px){  
     .description {
         width: 80%;
-        top: 50%;
     }
-
 }

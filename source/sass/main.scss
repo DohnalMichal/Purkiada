@@ -1,6 +1,8 @@
 /*===Variables===*/
 
 $Purkcolor: #00833e;
+$gray: #6c757d;
+$dark: #343a40;
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin-ext');
 @import "mainNav.scss";
@@ -26,14 +28,14 @@ section{
 }
 
 .wrapper{
-	width: 100%;
+	width: 90%;
 	max-width: 1000px;
 	margin: 0 auto;
 	position: relative;
 }
 @media screen and (max-width: 786px){
 	.wrapper{
-		margin: 0;
+		margin: 0 auto;
 	}
 	#content{
 		margin: 0;

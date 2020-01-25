@@ -1,37 +1,74 @@
-.informace{
-    width: 70%;
-    position: absolute;
-    transform: translateX(-50%);
-    left: 50%;
-    text-align: justify;
-    margin: 100px 0;
-    padding: 20px 40px;;
-    background: rgba(59, 59, 59, 0.178);
-    color: #fff;
-}
-
-// .informace h2{    
-//     color: rgb(255, 255, 255);
-// }
-// .informace p{
-//     color: rgb(255, 255, 255);
-// }
-#map {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 60%;
-    height: 400px;
-    background-color: grey;
-}
-
-@media only screen and (max-width: 786px) {
-    #map {
-        width: 100%;
-        max-height: 300px;
+.wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    .information {
+        z-index: 2;
+        width: 50%;
+        p {
+            color: $gray;
+        }
+        h2 {
+            margin-top: 0;
+            color: $dark;
+        }
     }
-    .informace {
-        padding: 20px;
-        width: 80%;
+    img {
+        border-radius: 7px;
+        box-shadow: 0 5px 30px -5px rgba(0,0,0,.4);
+        margin: 0 2em;
     }
 }
+@media screen and (max-width: 786px) {
+    .wrapper {
+        flex-direction: column;
+        .information{
+            margin: 0 auto 1.5em auto;
+            width: 90%;
+        }
+        img {
+            width: 60%;
+            height: auto;
+            margin: 0 auto;
+        }
+    }
+    .second-wrapper {
+        flex-direction: column-reverse;
+    }
+}
+// .informace{
+//     width: 70%;
+//     position: absolute;
+//     transform: translateX(-50%);
+//     left: 50%;
+//     text-align: justify;
+//     margin: 100px 0;
+//     padding: 20px 40px;;
+//     background: rgba(59, 59, 59, 0.178);
+//     color: #fff;
+// }
+
+// // .informace h2{    
+// //     color: rgb(255, 255, 255);
+// // }
+// // .informace p{
+// //     color: rgb(255, 255, 255);
+// // }
+// #map {
+//     position: relative;
+//     left: 50%;
+//     transform: translateX(-50%);
+//     width: 60%;
+//     height: 400px;
+//     background-color: grey;
+// }
+
+// @media only screen and (max-width: 786px) {
+//     #map {
+//         width: 100%;
+//         max-height: 300px;
+//     }
+//     .informace {
+//         padding: 20px;
+//         width: 80%;
+//     }
+//}
