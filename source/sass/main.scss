@@ -1,6 +1,6 @@
 /*===Variables===*/
 
-$Purkcolor: #00833e;
+$green: #00833e;
 $gray: #6c757d;
 $dark: #343a40;
 
@@ -12,6 +12,7 @@ $dark: #343a40;
 @import "prihlaska.scss";
 @import "info.scss";
 @import "foto.scss";
+@import "footer.scss";
 
 html.sr .load-hidden {
     visibility: hidden;
