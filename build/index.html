@@ -79,11 +79,16 @@
   </div>
   <footer class="site-footer slanted-footer">
     <p> © 2019 Střední průmyslová škola Brno, Purkyňova, příspěvková organizace</p>
+    <div class="icons">
+      <a href="https://www.facebook.com/sspbrno/" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+      <a href="https://twitter.com/Purkynka" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
+      <a href="http://www.sspbrno.cz/" target="_blank"><ion-icon name="globe"></ion-icon></a>
+    </div>
   </footer>
 
   <script src="./assets/js/app.js"></script>
   <script>
-    function initMap() {
+    function initMap() { 
       var uluru = { lat: 49.22534, lng: 16.580333 };
       var map = new google.maps.Map(
         document.getElementById('map'), { zoom: 15, center: uluru });
@@ -91,7 +96,7 @@
       }
   </script>
   <script async defer
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWkObXCMcvXscKp9O3IqRgHNsSb3OB9eE&callback=initMap">
-  </script>
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWkObXCMcvXscKp9O3IqRgHNsSb3OB9eE&callback=initMap"></script>
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </body>
 </html>

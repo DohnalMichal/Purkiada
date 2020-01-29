@@ -567,13 +567,30 @@ footer {
   background: #00833e;
   margin-top: 2em; }
   .site-footer p {
+    position: relative;
     text-align: center;
-    color: white; }
+    color: white;
+    padding-bottom: 5px;
+    z-index: 99; }
+  .site-footer .icons {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 32px;
+    color: white;
+    margin-top: 4px; }
+  .site-footer a {
+    margin: 0 2px;
+    text-decoration: none;
+    color: #fff; }
+  .site-footer a:hover {
+    color: #b6b6b6;
+    transition: color 0.15s ease-in-out 0s, background-color 0.15s ease-in-out 0s, border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s, -webkit-box-shadow 0.15s ease-in-out 0s; }
 
 .site-footer.slanted-footer::before {
   content: "";
   background: #00833e;
-  height: 160px;
+  height: 200px;
   -webkit-transform: skewY(-5deg);
   -ms-transform: skewY(-5deg);
   transform: skewY(-5deg);

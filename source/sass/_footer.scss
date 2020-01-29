@@ -27,15 +27,36 @@ footer {
     background: $green;
     margin-top: 2em;
     p {
+        position: relative;
         text-align: center;
         color: white;
+        padding-bottom: 5px;
+        z-index: 99;
+    }
+    .icons {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 32px;
+        color: rgb(255, 255, 255);
+        margin-top: 4px;
+    }
+    a {
+        margin: 0 2px;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    a:hover {
+        color: rgb(182, 182, 182);
+        transition: color 0.15s ease-in-out 0s, background-color 0.15s ease-in-out 0s, border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s, -webkit-box-shadow 0.15s ease-in-out 0s
     }
 }
 
 .site-footer.slanted-footer::before {
     content: "";
     background: $green;
-    height: 160px;
+    height: 200px;
     -webkit-transform: skewY(-5deg);
     -ms-transform: skewY(-5deg);
     transform: skewY(-5deg);
