@@ -11,16 +11,17 @@
 }
 
 .modal-content {
-    width: 500px;
+    width: 470px;
     height: 370px;
     background-color: #fff;
     color: #495057;
     border-radius: 7px;
-    padding: 15px 5px;
+    padding: 15px 0px;
     position: relative;
     p {
-        margin: 0;
-        margin-left: 106.5px;
+        width: 60%;
+        margin: 0 auto;
+        // margin-left: 88px;
         font-size: 10px;
         text-align: left;
     }
@@ -45,18 +46,20 @@ form {
 }
 
 input {
-    width: 55%;
+    width: 60%;
     display: block;
     margin: 15px auto;
-    padding: 5px;
+    padding: 6px;
     border: 1px solid #ced4da;
     border-radius: .25rem;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
 .checkbox {
-    margin-top: 15px;
-    margin-left: 107.5px;
+    width: 60%;
+    margin: 10px auto;
+    // margin-top: 10px;
+    // margin-left: 88px;
     text-align: left;
     padding: 0;
     display: flex;
@@ -106,15 +109,21 @@ button, input {
     overflow: visible;
 }
 
-// /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
-// @media only screen 
-//   and (min-device-width: 320px) 
-//   and (max-device-width: 568px)
-//   and (-webkit-min-device-pixel-ratio: 2) {
-//     form {
-//         top: 55%;
-//     }
-// }
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+@media only screen 
+  and (max-device-width: 400px){
+    .modal-content {
+        input[type=text], input[type=email] {
+            width: 70%;
+        }
+        p {
+            width: 70%;
+        }
+        .checkbox {
+            width: 70%;
+        }
+    }
+}
 // /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
 // @media only screen 
 // and (min-device-width: 375px) 
