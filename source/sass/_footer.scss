@@ -23,7 +23,7 @@ footer {
 
 .site-footer {
     padding-top: 3em;
-    padding-bottom: 3em;
+    padding-bottom: 5em;
     position: relative;
     background: $green;
     margin-top: 2em;
@@ -33,6 +33,7 @@ footer {
         color: white;
         padding-bottom: 5px;
         z-index: 99;
+        bottom: 10%;
     }
     .icons {
         position: absolute;
@@ -57,7 +58,7 @@ footer {
 .site-footer.slanted-footer::before {
     content: "";
     background: $green;
-    height: 150px;
+    height: 180px;
     -webkit-transform: skewY(-5deg);
     -ms-transform: skewY(-5deg);
     transform: skewY(-5deg);

@@ -563,7 +563,7 @@ footer {
 
 .site-footer {
   padding-top: 3em;
-  padding-bottom: 3em;
+  padding-bottom: 5em;
   position: relative;
   background: #00833e;
   margin-top: 2em; }
@@ -572,7 +572,8 @@ footer {
     text-align: center;
     color: white;
     padding-bottom: 5px;
-    z-index: 99; }
+    z-index: 99;
+    bottom: 10%; }
   .site-footer .icons {
     position: absolute;
     left: 50%;
@@ -591,7 +592,7 @@ footer {
 .site-footer.slanted-footer::before {
   content: "";
   background: #00833e;
-  height: 150px;
+  height: 180px;
   -webkit-transform: skewY(-5deg);
   -ms-transform: skewY(-5deg);
   transform: skewY(-5deg);
@@ -607,7 +608,8 @@ html.sr .load-hidden {
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
-  width: 100%; }
+  width: 100%;
+  line-height: 1.5; }
 
 section {
   display: -webkit-box; }
