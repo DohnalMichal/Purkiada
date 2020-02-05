@@ -39,7 +39,7 @@
       <h1 class="headline load-hidden">Purkiáda</h1>
       <p>Purkiáda je soutěž pořádaná Střední průmyslovou školou Brno, která je zaměřena na řešení různých logických a
         grafických úloh na počítači.</p>
-      <a class="button" href="prihlaska.php">Přihláška</a>
+      <a class="button" href="#" id="loginButton">Přihláška</a>
     </div>
   </section>
   <div class="wrapper" style="margin-top: -8em; margin-bottom: 9em;">
@@ -85,7 +85,24 @@
       <a href="http://www.sspbrno.cz/" target="_blank"><ion-icon name="globe"></ion-icon></a>
     </div>
   </footer>
-
+  <div id="modal" class="bg-modal">
+    <div class="modal-content">
+      <div class="close">&times;</div>
+      <h2>Přihláška</h2>
+      <form onsubmit="alertFunction()">
+        <input type="text" id="name" aria-describedby="name" aria-required="true" placeholder="Jméno*">
+        <input type="text" id="surname" aria-describedby="surname" aria-required="true" placeholder="Příjmení*">
+        <input type="email" id="email" aria-describedby="emailHelp" aria-required="true" placeholder="Zadejte e-mailovou adresu*">
+        <input type="text" style="margin-bottom: 0;" id="school" aria-describedby="school" aria-required="true" placeholder="Škola*">
+        <label for="school"><p>* povinné pole</p></label>
+        <div class="checkbox">
+          <input type="checkbox" id="exampleCheck1">
+          <label for="exampleCheck1">Souhlasím s podmínkami o zpracování osobních údajů</label>  
+        </div>
+        <button type="submit" class="btn btn-primary">Závazně přihlásit</button>
+      </form>
+    </div>
+  </div>
   <script src="./assets/js/app.js"></script>
   <script>
     function initMap() { 

@@ -2,10 +2,10 @@
 $black: rgba(17, 17, 17, 0.74);
 $white: #f8f8f8;
 header{
-	background-size: cover;
-	-webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+	// background-size: cover;
+	// -webkit-background-size: cover;
+    // -moz-background-size: cover;
+    // -o-background-size: cover;
 	width: 100%;
 	height: auto;
 	margin: 0;
@@ -21,7 +21,7 @@ header{
 	height: 130vh;
 	margin: 0px 0px 200px 0px;
 }
-.slanted::after{
+.slanted::after {
 	content: "";
     background: #fff;
     height: 200px;
