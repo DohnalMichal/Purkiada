@@ -29,6 +29,36 @@ $('.toggle').on('click', () => {
   $menu.toggleClass('showing');
 });
 
+//Registration form
+document.getElementById("loginButton").addEventListener("click",function(){
+  document.querySelector(".bg-modal").style.display = "flex";
+  document.querySelector("form").style.opacity = 1;
+});
+
+document.querySelector(".close").addEventListener("click", function(){
+  document.querySelector(".bg-modal").style.display = "none";
+});
+
+//Closing modal on click outside of the box
+const modal = document.getElementById('modal');
+document.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+//Close on escape
+$(document).keydown(function(event) { 
+  if (event.keyCode == 27) { 
+    $('#modal').hide();
+  }
+});
+
+//Alert
+function alertFunction() {
+  alert("Vaše přihláška byla odeslána");
+};
+
 //Dropdown menu
 
 /* When the user clicks on the button, 
