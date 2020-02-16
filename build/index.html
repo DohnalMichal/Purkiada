@@ -23,7 +23,8 @@
       </div>
       <div class="menu">
         <ul>
-          <li><a href="prihlaska.php">Přihláška</a></li>
+          <li><a href="#" id="loginButton">Přihláška</a></li>
+          <li><a href="#informace">Informace</a></li>
           <li><a href="zadani.html">Zadání</a></li>
           <li><a href="vysledky.html">Výsledky</a></li>
           <li><a href="fotogalerie.html">Fotogalerie</a></li>
@@ -39,11 +40,11 @@
       <h1 class="headline load-hidden">Purkiáda</h1>
       <p>Purkiáda je soutěž pořádaná Střední průmyslovou školou Brno, která je zaměřena na řešení různých logických a
         grafických úloh na počítači.</p>
-      <a class="button" href="#" id="loginButton">Přihláška</a>
+      <a class="button" href="#" id="loginButton2">Přihláška</a>
     </div>
   </section>
-  <div class="wrapper" style="margin-top: -8em; margin-bottom: 9em;">
-    <div class="information">
+  <div id="informace" class="wrapper load-hidden" style="margin-top: -13.75em; margin-bottom: 5em; padding-top: 100px;">
+    <div class="information load-hidden">
       <h2>Co je to Purkiáda?</h2>
       <p>Purkiáda je soutěž pořádaná Střední průmyslovou školou Brno, Purkyňova 97. Soutěž je určena žákům devátých tříd základních škol. Budete na počítačích řešit úkoly zaměřené na logické a kreativní myšlení, práci s grafickým programem a internetem. Celkový počet účastníků je také omezen kapacitou počítačových učeben, tj. maximálně 100 soutěžících.</p>
     </div>
@@ -57,23 +58,20 @@
     </div>
   </div>
   <div class="background">
-    <div class="wrapper">
+    <div class="wrapper load-hidden">
       <div class="information second-information">
         <h2>Kdy a kde?</h2>
-        <p>10. ročník Purkiády se koná 30.1.2019 od 9 do 12 hodin na naší škole.<br>
-          <br>
-          Najdete nás v Brně na Purkyňově ulici 97.<br>    
-          <br>   
-          Příklady budeme řešit od 9 hodin, v 8.30 hodin vás přivítáme v jídelně naší školy (od vrátnice vpravo podle šipek.<br>
+        <p>10. ročník Purkiády se koná 30.1.2019 od 9 do 12 hodin na naší škole.</p>
+          <p>Najdete nás v Brně na Purkyňově ulici 97.</p> 
+          <p>Příklady budeme řešit od 9 hodin, v 8.30 hodin vás přivítáme v jídelně naší školy (od vrátnice vpravo podle šipek).</p>
         </p>
-        <div id="map"></div>
-        <p style="margin-bottom: 50px;">Každý při příchodu do jídelny dostane přidělený kód, pod kterým bude úlohy odevzdávat a pod tímto kódem naleznete pak na webu i vaše výsledky.<br>
-          <br>
-          Na vyřešení úloh není potřeba znalost žádného speciálního programu. Pokud nějakého ne zcela běžného programu využíváme, vše je řádně vysvětleno. Doporučujeme pro řešení úloh nepoužívat prohlížeč Internet Explorer.<br>
-          <br>  
-          Po skončení soutěže si budete moci školu za doprovodu studentů prohlédnout. Pozvánka na prohlídku školy platí i pro váš případný doprovod.<br>
-          <br>  
-          Na vaši účast se těší přípravný tým Purkiády</p>
+        <a href="https://www.google.com/maps/place/St%C5%99edn%C3%AD+pr%C5%AFmyslov%C3%A1+%C5%A1kola+Brno,+Purky%C5%88ova,+p%C5%99%C3%ADsp%C4%9Bvkov%C3%A1+organizace/@49.2257799,16.5771355,15.18z/data=!4m5!3m4!1s0x47129403c69be65b:0xd9c7d91a683162ab!8m2!3d49.225329!4d16.580324" target="_blank"><img src="./img/mapa.png" alt="mapa" id="map"></a>
+          <div style="margin-bottom: 50px;">
+            <p>Každý při příchodu do jídelny dostane <strong>přidělený kód</strong> , pod kterým bude úlohy <strong>odevzdávat</strong> a pod tímto kódem naleznete pak na webu i vaše  <strong>výsledky</strong>.</p>
+            <p>Na vyřešení úloh <strong> není potřeba znalost žádného speciálního programu</strong>. Pokud nějakého ne zcela běžného programu využíváme, vše je řádně vysvětleno. Doporučujeme pro řešení úloh nepoužívat prohlížeč Internet Explorer.</p>
+            <p>Po skončení soutěže si budete moci školu za doprovodu studentů prohlédnout. Pozvánka na prohlídku školy platí i pro váš případný doprovod.</p>
+            <p>Na vaši účast se těší přípravný tým Purkiády</p>
+          </div>
       </div>
     </div>
   </div>
@@ -104,14 +102,14 @@
     </div>
   </div>
   <script src="./assets/js/app.js"></script>
-  <script>
+  <!-- <script>
     function initMap() { 
       var uluru = { lat: 49.22534, lng: 16.580333 };
       var map = new google.maps.Map(
         document.getElementById('map'), { zoom: 15, center: uluru });
       var marker = new google.maps.Marker({ position: uluru, map: map });
       }
-  </script>
+  </script> -->
   <script async defer
   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWkObXCMcvXscKp9O3IqRgHNsSb3OB9eE&callback=initMap"></script>
   <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>

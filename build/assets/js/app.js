@@ -30,7 +30,13 @@ $('.toggle').on('click', () => {
 });
 
 //Registration form
+//From navigation
 document.getElementById("loginButton").addEventListener("click",function(){
+  document.querySelector(".bg-modal").style.display = "flex";
+  document.querySelector("form").style.opacity = 1;
+});
+//Button
+document.getElementById("loginButton2").addEventListener("click",function(){
   document.querySelector(".bg-modal").style.display = "flex";
   document.querySelector("form").style.opacity = 1;
 });
@@ -87,6 +93,13 @@ window.onclick = function (event) {
 ScrollReveal().reveal('.headline', { distance: '20px' });
 ScrollReveal().reveal('.text, .description p', { delay: 200, duration: 1000, distance: '20px' });
 ScrollReveal().reveal('.description a', { delay: 300, duration: 1200, distance: '20px' });
+
+ScrollReveal().reveal('.information h2', { delay: 300, duration: 1000, distnace: '40px'});
+ScrollReveal().reveal('.information p', { delay: 350, duration: 1000, distnace: '40px'});
+ScrollReveal().reveal('.wrapper img', { delay: 300, duration: 1000, distnace: '40px'});
+ScrollReveal().reveal('.information #map', { delay: 300, duration: 1000});
+//Footer
+ScrollReveal().reveal('footer p, footer .icons', { delay: 200, duration: 1000, distnace: '40px'});
 //Nav
 ScrollReveal().reveal('nav', { duration: 800, distance: '-10px' });
 //Prihlaska

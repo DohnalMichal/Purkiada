@@ -9,6 +9,8 @@
 .wrapper {
     display: flex;
     justify-content: space-evenly;
+    
+    // margin-top: -180px;
     .information {
         z-index: 2;
         width: 50%;
@@ -27,10 +29,12 @@
     }
     .second-information {
         width: 100%;
+        text-align: center;
     }
 }
 
 .wrapper.second-wrapper {
+    margin-top: 7em;
     margin-bottom: 5em;
     img {
         margin-left: 0;
@@ -60,8 +64,8 @@
 #map {
     position: relative;
     margin: 3em auto;
-    height: 25em;
-    width: 45em;
+    // height: 25em;
+    // width: 45em;
     background-color: grey;
     border-radius: 7px;
     box-shadow: 0 5px 30px -5px rgba(0,0,0,.4);
