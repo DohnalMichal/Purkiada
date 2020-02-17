@@ -109,8 +109,9 @@ ScrollReveal().reveal('.zadani, .vysledky, .informace', { delay: 200, duration: 
 //Fotogalerie
 ScrollReveal().reveal('.row', { delay: 200, duration: 800, distance: '20px' });
 
-
-// MDB Lightbox Init
-$(function () {
-  $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
-});
+//Slider-show
+// $('.card-show').slick({
+//   infinite: true,
+//   slidesToShow: 2,
+//   slidesToScroll: 3
+// });
