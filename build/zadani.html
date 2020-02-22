@@ -44,11 +44,12 @@
   </section>
 
   <div class="slider">
-    <i class="fas fa-chevron-left prev"></i>
+    <i class="fas fa-chevron-left prev hidden"></i>
     <i class="fas fa-chevron-right next"></i>
     <div class="card-show">
       <div class="card">
-      <h2>2020</h2>
+        <img src="./img/zadani/2020.jpg" alt="2020">
+        <h2>2020</h2>
       <!-- <button>Zadání</button>
       <button>Záznamový list</button>
       <button>Zadání a nápovědy úloh</button>
@@ -56,6 +57,7 @@
       <button>Výsledky</button> -->
       </div>
       <div class="card">
+        <img src="./img/zadani/2019.jpg" alt="2019">
         <h2>2019</h2>
         <!-- <button>Zadání</button>
         <button>Záznamový list</button>
@@ -64,6 +66,7 @@
         <button>Výsledky</button> -->
       </div>
       <div class="card">
+        <img src="./img/zadani/2018.jpg" alt="2018">
         <h2>2018</h2>
         <!-- <button>Zadání</button>
         <button>Záznamový list</button>
@@ -72,21 +75,58 @@
         <button>Výsledky</button> -->
       </div>
       <div class="card">
+        <img src="./img/zadani/2017.jpg" alt="2017">
         <h2>2017</h2>
       </div>
       <div class="card">
+        <img src="./img/zadani/2016.jpg" alt="2016">
         <h2>2016</h2>
       </div>
       <div class="card">
+        <img src="./img/default.png" alt="2015">
         <h2>2015</h2>
       </div>
       <div class="card">
+        <img src="./img/default.png" alt="2014">
         <h2>2014</h2>
+      </div>
+      <div class="card">
+        <img src="./img/default.png" alt="2013">
+        <h2>2013</h2>
+      </div>
+      <div class="card">
+        <img src="./img/default.png" alt="2011">
+        <h2>2011</h2>
+      </div>
+      <div class="card">
+        <img src="./img/default.png" alt="2010">
+        <h2>2010</h2>
+      </div>
+      <div class="card">
+        <img src="./img/default.png" alt="2009">
+        <h2>2009</h2>
       </div>
     </div>
   </div>
 
-  <footer class="site-footer">
+  <section class="aditional-info">
+    <h2>Informace pro řešitele</h2>
+    <div class="wrapper">
+      <ul>
+        <li>Vždy si řádně přečíst zadání.</li>
+        <li>Odpovídat na položenou otázku a nikoli na věci okolo</li>
+        <li>Pokud se vyskytne složitý úkol, se kterým si nevíte rady, není třeba ho řešit za každou cenu hned. Můžete ho přeskočit a vrátit se k němu až ve chvíli, kdy máte vyřešeny ty příklady, které jsou jednodušší. Vyhnete se tím zbytečné ztrátě času, který by byl jinak využit pro lehčí příklady.</li>
+        <li>Je vhodné si po sobě svou práci zkontrolovat, a to nejlépe několikrát (zbývá-li čas). Je zbytečné práci odevzdávat před vypršením času. Za dřívější odevzdání nelze získat body navíc</li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="site-footer" style="margin-top: 0px;">
     <p> © 2019 Střední průmyslová škola Brno, Purkyňova, příspěvková organizace</p>
     <div class="icons">
       <a href="https://www.facebook.com/sspbrno/" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
@@ -120,13 +160,57 @@
   <script type="text/javascript">
     $(document).ready(function(){
       $('.card-show').slick({
-        infinite: true,
+        infinite: false,
         slidesToShow: 3,
         slidesToScroll: 1,
         nextArrow: $('.next'),
-        prevArrow: $('.prev')
+        prevArrow: $('.prev'),
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: false,
+              dots: false
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ],
       });
+      $('.card-show').on('afterChange', function (event, slick, currentSlide) {
+          if(currentSlide === 8) {
+            $('.next').addClass('hidden');
+          }
+          else {
+            $('.next').removeClass('hidden');
+          }
+
+          if(currentSlide === 0) {
+            $('.prev').addClass('hidden');
+          }
+          else {
+            $('.prev').removeClass('hidden');
+          }  
+        })
     });
+    
+    // document.querySelector(".close").addEventListener("click", function(){
+    //   document.querySelector(".bg-modal").style.display = "none";
+    // });
   </script>
 </body>
 </html>

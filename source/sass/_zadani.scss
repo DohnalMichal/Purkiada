@@ -38,7 +38,7 @@
 }
 
 .slider .next {
-    right: 40px;
+    right: 30px;
     // right: 3%;
 }
 
@@ -52,15 +52,24 @@
     // display: flex;
     // justify-content: center;
     .card {
-        color: #fff;
+        color: $dark;
         text-align: center;
-        background-color: rgba(52, 152, 219, 0.753);
+        // background-color: rgba(52, 152, 219, 0.753);
+        background-color: #fff;
         width: 250px;
-        padding: 20px;
+        height: auto;
+        // padding: 20px;
         border-radius: 7px;
         box-shadow: 0 5px 30px -5px rgba(0,0,0,.4);
         display: inline-block;
         margin: 20px 35px;
+        img {
+            width: 100%;
+            border-radius: 7px 7px 0px 0px;
+        }
+        h2 {
+            margin-bottom: 1em;
+        }
         button {
             color: #fff;
             background-color: rgba(52, 152, 219, 0.753);
@@ -72,6 +81,33 @@
         button:hover {
             background-color: rgba(44, 125, 179, 0.753);
             cursor: pointer;
+        }
+    }
+}
+
+//Hidden arrows
+.prev.hidden,
+.next.hidden {
+    opacity: 0;
+    pointer-events:none;
+}
+
+.aditional-info {
+    margin-top: 5em;
+    width: 100%;
+    text-align: center;
+    background-color: $bg;
+    padding-top: 1em;
+    padding-bottom: 3em;
+    color: $dark;
+    display: block;
+    ul {
+        list-style-type: none;
+        text-align: left;
+        li {
+            // padding-left: 0.7em;
+            // border-left: 2px solid $dark;
+            margin-top: 0.7em;
         }
     }
 }

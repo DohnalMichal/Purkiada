@@ -202,7 +202,7 @@ nav.black ul {
   left: 40px; }
 
 .slider .next {
-  right: 40px; }
+  right: 30px; }
 
 .card-show {
   height: auto;
@@ -212,15 +212,20 @@ nav.black ul {
   overflow: hidden;
   width: 90%; }
   .card-show .card {
-    color: #fff;
+    color: #343a40;
     text-align: center;
-    background-color: rgba(52, 152, 219, 0.753);
+    background-color: #fff;
     width: 250px;
-    padding: 20px;
+    height: auto;
     border-radius: 7px;
     box-shadow: 0 5px 30px -5px rgba(0, 0, 0, 0.4);
     display: inline-block;
     margin: 20px 35px; }
+    .card-show .card img {
+      width: 100%;
+      border-radius: 7px 7px 0px 0px; }
+    .card-show .card h2 {
+      margin-bottom: 1em; }
     .card-show .card button {
       color: #fff;
       background-color: rgba(52, 152, 219, 0.753);
@@ -231,6 +236,26 @@ nav.black ul {
     .card-show .card button:hover {
       background-color: rgba(44, 125, 179, 0.753);
       cursor: pointer; }
+
+.prev.hidden,
+.next.hidden {
+  opacity: 0;
+  pointer-events: none; }
+
+.aditional-info {
+  margin-top: 5em;
+  width: 100%;
+  text-align: center;
+  background-color: #F5F6F7;
+  padding-top: 1em;
+  padding-bottom: 3em;
+  color: #343a40;
+  display: block; }
+  .aditional-info ul {
+    list-style-type: none;
+    text-align: left; }
+    .aditional-info ul li {
+      margin-top: 0.7em; }
 
 .bg-modal {
   width: 100%;
