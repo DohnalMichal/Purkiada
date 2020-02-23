@@ -175,12 +175,15 @@ nav.black ul {
   height: 80vh;
   display: block;
   text-align: center; }
-  .zadani h1 {
+  .zadani h1, .zadani h2 {
     position: relative;
     top: 30%;
     margin: 0 auto;
-    font-size: 48px;
     color: #fff; }
+  .zadani h1 {
+    font-size: 48px; }
+  .zadani h2 {
+    font-size: 32px; }
   .zadani p {
     position: relative;
     top: 30%;
@@ -188,6 +191,11 @@ nav.black ul {
 
 .slider {
   position: relative; }
+  .slider h2 {
+    color: #343a40;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 0; }
 
 .slider .prev, .slider .next {
   position: absolute;
@@ -221,6 +229,9 @@ nav.black ul {
     box-shadow: 0 5px 30px -5px rgba(0, 0, 0, 0.4);
     display: inline-block;
     margin: 20px 35px; }
+    .card-show .card a {
+      color: #343a40;
+      text-decoration: none; }
     .card-show .card img {
       width: 100%;
       border-radius: 7px 7px 0px 0px; }
@@ -241,6 +252,31 @@ nav.black ul {
 .next.hidden {
   opacity: 0;
   pointer-events: none; }
+
+.buttons {
+  margin: 6em auto;
+  display: flex;
+  flex-direction: column; }
+  .buttons button {
+    width: 100%;
+    color: #00833e;
+    background-color: #fff;
+    border: 3px solid #00833e;
+    border-radius: 7px;
+    padding: 0.7rem;
+    font-size: 24px;
+    cursor: pointer;
+    transition: 0.25s; }
+  .buttons a {
+    margin: 0.3rem auto;
+    width: 500px; }
+  .buttons a:hover,
+  .buttons a:focus,
+  .buttons button:hover,
+  .buttons button:focus {
+    background-color: #00833e;
+    color: white;
+    border-radius: 7px; }
 
 .aditional-info {
   margin-top: 5em;
