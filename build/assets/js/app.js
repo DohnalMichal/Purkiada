@@ -115,3 +115,16 @@ ScrollReveal().reveal('.row', { delay: 200, duration: 800, distance: '20px' });
 //   slidesToShow: 2,
 //   slidesToScroll: 3
 // });
+
+//Moving background for main page
+$('#moving-bg').mousemove(function(e){
+   moveX = (e.pageX * -1 / 15);
+   moveY = (e.pageY * -1 / 15);
+  $(this).css('background-position', moveX + 'px ' + moveY + 'px')
+})
+
+$('#zadani').mousemove(function(e){
+   moveX = (e.pageX * -1 / 15);
+   moveY = (e.pageY * -1 / 15);
+  $(this).css('background-position', moveX + 'px ' + moveY + 'px')
+})

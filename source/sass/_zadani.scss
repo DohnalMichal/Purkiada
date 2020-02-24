@@ -1,5 +1,6 @@
 .zadani {
     background: linear-gradient(to bottom, rgba(161, 161, 161, 0.726), rgba(0, 0, 0, 0.808)), url("../img/resultsbg.jpg") no-repeat center center;
+    overflow: hidden;
     width: 100%;
     height: 80vh;
     display: block;
@@ -41,7 +42,8 @@
     cursor: pointer;
     font-size: 28px;
     z-index: 2;
-    color: $dark;
+    // color: $dark;
+    // color: #fff;
 }
 .slider .prev {
     left:  40px;
@@ -63,12 +65,12 @@
     // display: flex;
     // justify-content: center;
     .card {
-        color: $dark;
-        // color: #fff;
+        // color: $dark;
+        color: #fff;
         text-align: center;
         // background-color: rgba(52, 152, 219, 0.753);
-        // background-color: $green;
-        background-color: #fff;
+        background-color: hsla(0, 11%, 17%, 0.557);
+        // background-color: rgb(255, 255, 255);
         width: 250px;
         height: auto;
         // padding: 20px;
@@ -77,7 +79,8 @@
         display: inline-block;
         margin: 20px 35px;
         a {
-            color: $dark;
+            // color: $dark;
+            color: #fff;
             text-decoration: none;
         }
         img {
@@ -85,7 +88,10 @@
             border-radius: 7px 7px 0px 0px;
         }
         h2 {
+            color: #fff;
             margin-bottom: 1em;
+            font-size: 28px;
+            text-shadow: 3px 3px 1px gray;
         }
         button {
             color: #fff;
