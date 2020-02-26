@@ -38,7 +38,7 @@
       </div>
     </nav>
   </header>
-  <section class="zadani" id="zadani">
+  <section class="zadani">
     <h1>Zadání a výsledky</h1>
     <p>Zde naleznete zadání a výsledky z minulých let</p>
   </section>
@@ -133,49 +133,28 @@
   <section class="aditional-info">
     <h2>Informace pro řešitele</h2>
     <div class="wrapper">
+      <img src="./img/browser.svg" alt="browser">
       <ul>
         <li>Vždy si řádně přečíst zadání.</li>
         <li>Odpovídat na položenou otázku a nikoli na věci okolo</li>
         <li>Pokud se vyskytne složitý úkol, se kterým si nevíte rady, není třeba ho řešit za každou cenu hned. Můžete ho přeskočit a vrátit se k němu až ve chvíli, kdy máte vyřešeny ty příklady, které jsou jednodušší. Vyhnete se tím zbytečné ztrátě času, který by byl jinak využit pro lehčí příklady.</li>
         <li>Je vhodné si po sobě svou práci zkontrolovat, a to nejlépe několikrát (zbývá-li čas). Je zbytečné práci odevzdávat před vypršením času. Za dřívější odevzdání nelze získat body navíc</li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
       </ul>
     </div>
   </section>
 
   <footer class="site-footer" style="margin-top: 0px;">
-    <p> © 2019 Střední průmyslová škola Brno, Purkyňova, příspěvková organizace</p>
+    <p> © 2019 Střední průmyslová škola Brno, Purkyňova, příspěvková organizace<br>
+    Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
     <div class="icons">
       <a href="https://www.facebook.com/sspbrno/" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
       <a href="https://twitter.com/Purkynka" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
       <a href="http://www.sspbrno.cz/" target="_blank"><ion-icon name="globe"></ion-icon></a>
     </div>
   </footer>
-  <div id="modal" class="bg-modal">
-    <div class="modal-content">
-      <div class="close">&times;</div>
-      <h2>Přihláška</h2>
-      <form onsubmit="alertFunction()">
-        <input type="text" id="name" aria-describedby="name" aria-required="true" placeholder="Jméno*">
-        <input type="text" id="surname" aria-describedby="surname" aria-required="true" placeholder="Příjmení*">
-        <input type="email" id="email" aria-describedby="emailHelp" aria-required="true" placeholder="Zadejte e-mailovou adresu*">
-        <input type="text" style="margin-bottom: 0;" id="school" aria-describedby="school" aria-required="true" placeholder="Škola*">
-        <label for="school"><p>* povinné pole</p></label>
-        <div class="checkbox">
-          <input type="checkbox" id="exampleCheck1">
-          <label for="exampleCheck1">Souhlasím s podmínkami o zpracování osobních údajů</label>  
-        </div>
-        <button type="submit" class="btn btn-primary">Závazně přihlásit</button>
-      </form>
-    </div>
-  </div>
   
   <script src="./assets/js/app.js"></script>
-  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
   <script type="text/javascript">
@@ -229,6 +208,12 @@
         })
     });
     
+    // $('section').mousemove(function(e){
+        // moveX = (e.pageX * -1 / 15);
+        // moveY = (e.pageY * -1 / 15);
+      // $(this).css('background-position', moveX + 'px ' + moveY + 'px')
+    // })
+
     // document.querySelector(".close").addEventListener("click", function(){
     //   document.querySelector(".bg-modal").style.display = "none";
     // });

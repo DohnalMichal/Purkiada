@@ -31,40 +31,41 @@ $('.toggle').on('click', () => {
 
 //Registration form
 //From navigation
-document.getElementById("loginButton").addEventListener("click",function(){
-  document.querySelector(".bg-modal").style.display = "flex";
-  document.querySelector("form").style.opacity = 1;
-});
-//Button
-document.getElementById("loginButton2").addEventListener("click",function(){
-  document.querySelector(".bg-modal").style.display = "flex";
-  document.querySelector("form").style.opacity = 1;
-});
+function loginFunction(){
+  document.getElementById("loginButton").addEventListener("click",function(){
+    document.querySelector(".bg-modal").style.display = "flex";
+    document.querySelector("form").style.opacity = 1;
+  });
+  //Button
+  document.getElementById("loginButton2").addEventListener("click",function(){
+    document.querySelector(".bg-modal").style.display = "flex";
+    document.querySelector("form").style.opacity = 1;
+  });
 
-document.querySelector(".close").addEventListener("click", function(){
-  document.querySelector(".bg-modal").style.display = "none";
-});
+  document.querySelector(".close").addEventListener("click", function(){
+    document.querySelector(".bg-modal").style.display = "none";
+  });
 
-//Closing modal on click outside of the box
-const modal = document.getElementById('modal');
-document.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
+  //Closing modal on click outside of the box
+  const modal = document.getElementById('modal');
+  document.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
   }
-}
 
-//Close on escape
-$(document).keydown(function(event) { 
-  if (event.keyCode == 27) { 
-    $('#modal').hide();
-  }
-});
+  //Close on escape
+  $(document).keydown(function(event) { 
+    if (event.keyCode == 27) { 
+      $('#modal').hide();
+    }
+  });
 
-//Alert
-function alertFunction() {
-  alert("Vaše přihláška byla odeslána");
+  //Alert
+  function alertFunction() {
+    alert("Vaše přihláška byla odeslána");
+  };
 };
-
 //Dropdown menu
 
 /* When the user clicks on the button, 
@@ -99,7 +100,7 @@ ScrollReveal().reveal('.information p', { delay: 350, duration: 1000, distnace: 
 ScrollReveal().reveal('.wrapper img', { delay: 300, duration: 1000, distnace: '40px'});
 ScrollReveal().reveal('.information #map', { delay: 300, duration: 1000});
 //Footer
-ScrollReveal().reveal('footer p, footer .icons', { delay: 200, duration: 1000, distnace: '40px'});
+// ScrollReveal().reveal('footer p, footer .icons', { delay: 200, duration: 1000, distnace: '40px'});
 //Nav
 ScrollReveal().reveal('nav', { duration: 800, distance: '-10px' });
 //Prihlaska
@@ -118,13 +119,7 @@ ScrollReveal().reveal('.row', { delay: 200, duration: 800, distance: '20px' });
 
 //Moving background for main page
 $('#moving-bg').mousemove(function(e){
-   moveX = (e.pageX * -1 / 15);
-   moveY = (e.pageY * -1 / 15);
-  $(this).css('background-position', moveX + 'px ' + moveY + 'px')
-})
-
-$('#zadani').mousemove(function(e){
-   moveX = (e.pageX * -1 / 15);
-   moveY = (e.pageY * -1 / 15);
+   moveX = (e.pageX * -1 / 25);
+   moveY = (e.pageY * -1 / 25);
   $(this).css('background-position', moveX + 'px ' + moveY + 'px')
 })

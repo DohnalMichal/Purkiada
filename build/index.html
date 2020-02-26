@@ -15,7 +15,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
   <link rel="manifest" href="/favicon_io/site.webmanifest">
 </head>
-<body>
+<body onload="loginFunction()">
   <header>
     <nav class="nav load-hidden">
       <div class="logo">
@@ -48,13 +48,13 @@
       <h2>Co je to Purkiáda?</h2>
       <p>Purkiáda je soutěž pořádaná Střední průmyslovou školou Brno, Purkyňova 97. Soutěž je určena žákům devátých tříd základních škol. Budete na počítačích řešit úkoly zaměřené na logické a kreativní myšlení, práci s grafickým programem a internetem. Celkový počet účastníků je také omezen kapacitou počítačových učeben, tj. maximálně 100 soutěžících.</p>
     </div>
-    <img src="./img/foto-2016.jpg" alt="" width="360px" height="240px">
+    <img src="./img/computer.svg" alt="computer" width="300px" height="240px">
   </div>
   <div class="wrapper second-wrapper">
-    <img src="./img/placeholder.svg" alt="" width="360px" height="240px">
+    <img src="./img/dashboard.svg" alt="dashboard" width="300px" height="240px">
     <div class="information">
       <h2>Co získám?</h2>
-      <p>Prvních deset nejlepších řešitelů Purkiády bude pozváno do školy a obdrží hodnotné ceny. Všichni úspěšní účastníci dostanou účastnický list, který budou moci uplatnit v přijímacím řízení na naší škole.</p>
+      <p>Prvních deset nejlepších řešitelů Purkiády bude pozváno do školy a obdrží hodnotné ceny. Všichni úspěšní účastníci dostanou účastnický list, který budou moci<strong> uplatnit v přijímacím řízení</strong> na naší škole.</p>
     </div>
   </div>
   <div class="background">
@@ -76,7 +76,10 @@
     </div>
   </div>
   <footer class="site-footer slanted-footer">
-    <p> © 2019 Střední průmyslová škola Brno, Purkyňova, příspěvková organizace</p>
+    <div>
+      <p> © 2019 Střední průmyslová škola Brno, Purkyňova, příspěvková organizace <br>
+      Icons made by <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a> and <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
+    </div>
     <div class="icons">
       <a href="https://www.facebook.com/sspbrno/" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
       <a href="https://twitter.com/Purkynka" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
@@ -102,16 +105,6 @@
     </div>
   </div>
   <script src="./assets/js/app.js"></script>
-  <!-- <script>
-    function initMap() { 
-      var uluru = { lat: 49.22534, lng: 16.580333 };
-      var map = new google.maps.Map(
-        document.getElementById('map'), { zoom: 15, center: uluru });
-      var marker = new google.maps.Marker({ position: uluru, map: map });
-      }
-  </script> -->
-  <script async defer
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWkObXCMcvXscKp9O3IqRgHNsSb3OB9eE&callback=initMap"></script>
-  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
 </body>
 </html>

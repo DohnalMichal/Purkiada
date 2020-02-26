@@ -8,7 +8,6 @@ header {
 
 .slanted {
   background: linear-gradient(to bottom, rgba(161, 161, 161, 0.726), rgba(0, 0, 0, 0.808)), url("../img/bg.jpg") no-repeat center center;
-  background-size: 110% 160vh;
   overflow: hidden;
   width: 100%;
   height: 130vh;
@@ -168,8 +167,9 @@ nav.black ul {
     width: 80%; } }
 
 .zadani {
-  background: linear-gradient(to bottom, rgba(161, 161, 161, 0.726), rgba(0, 0, 0, 0.808)), url("../img/resultsbg.jpg") no-repeat center center;
+  background: linear-gradient(to bottom, rgba(161, 161, 161, 0.726), rgba(0, 0, 0, 0.808)), url("../img/resultsbg.jpg") no-repeat;
   overflow: hidden;
+  background-size: 110%;
   width: 100%;
   height: 80vh;
   display: block;
@@ -218,9 +218,9 @@ nav.black ul {
   overflow: hidden;
   width: 90%; }
   .card-show .card {
-    color: #fff;
+    color: #343a40;
     text-align: center;
-    background-color: rgba(48, 39, 39, 0.557);
+    background-color: white;
     width: 250px;
     height: auto;
     border-radius: 7px;
@@ -228,16 +228,14 @@ nav.black ul {
     display: inline-block;
     margin: 20px 35px; }
     .card-show .card a {
-      color: #fff;
       text-decoration: none; }
     .card-show .card img {
       width: 100%;
       border-radius: 7px 7px 0px 0px; }
     .card-show .card h2 {
-      color: #fff;
       margin-bottom: 1em;
       font-size: 28px;
-      text-shadow: 3px 3px 1px gray; }
+      text-shadow: 2px 2px 3px #ccc; }
     .card-show .card button {
       color: #fff;
       background-color: rgba(52, 152, 219, 0.753);
@@ -283,16 +281,25 @@ nav.black ul {
   margin-top: 5em;
   width: 100%;
   text-align: center;
-  background-color: #F5F6F7;
+  background-color: #f8f9fa;
   padding-top: 1em;
   padding-bottom: 3em;
   color: #343a40;
   display: block; }
+  .aditional-info h2 {
+    margin-bottom: 2em; }
+  .aditional-info img {
+    width: 30%;
+    height: auto; }
   .aditional-info ul {
+    width: 50%;
     list-style-type: none;
     text-align: left; }
     .aditional-info ul li {
-      margin-top: 0.7em; }
+      margin-top: 0.7em;
+      padding: 3px 10px;
+      border-left: 2px solid #343a40;
+      box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4); }
 
 .bg-modal {
   width: 100%;
@@ -399,7 +406,7 @@ button, input {
     width: 70%; } }
 
 .background {
-  background-color: #F5F6F7;
+  background-color: #f8f9fa;
   width: 100%;
   height: auto;
   padding-top: 2em;
@@ -417,8 +424,6 @@ button, input {
       margin-top: 0;
       color: #343a40; }
   .wrapper img {
-    border-radius: 7px;
-    box-shadow: 0 5px 30px -5px rgba(0, 0, 0, 0.4);
     margin: 0 2em; }
   .wrapper .second-information {
     width: 100%;
@@ -503,16 +508,16 @@ footer {
     position: relative;
     text-align: center;
     color: white;
-    padding-bottom: 5px;
     z-index: 99;
-    bottom: 10%; }
+    bottom: 10%;
+    margin: 0; }
   .site-footer .icons {
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 32px;
     color: white;
-    margin-top: 4px; }
+    margin-top: 1em; }
   .site-footer a {
     margin: 0 2px;
     text-decoration: none;
