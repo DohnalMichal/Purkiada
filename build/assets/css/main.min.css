@@ -167,9 +167,9 @@ nav.black ul {
     width: 80%; } }
 
 .zadani {
-  background: linear-gradient(to bottom, rgba(161, 161, 161, 0.726), rgba(0, 0, 0, 0.808)), url("../img/resultsbg.jpg") no-repeat;
+  background: linear-gradient(to bottom, rgba(161, 161, 161, 0.726), rgba(0, 0, 0, 0.808)), url("../img/resultsbg.jpg") no-repeat center center;
   overflow: hidden;
-  background-size: 110%;
+  background-size: cover;
   width: 100%;
   height: 80vh;
   display: block;
@@ -208,7 +208,7 @@ nav.black ul {
   left: 40px; }
 
 .slider .next {
-  right: 30px; }
+  right: 20px; }
 
 .card-show {
   height: auto;
@@ -286,20 +286,29 @@ nav.black ul {
   padding-bottom: 3em;
   color: #343a40;
   display: block; }
-  .aditional-info h2 {
+  .aditional-info .wrapper h2 {
     margin-bottom: 2em; }
-  .aditional-info img {
+  .aditional-info .wrapper img {
     width: 30%;
     height: auto; }
-  .aditional-info ul {
-    width: 50%;
+  .aditional-info .wrapper ul {
+    width: 80%;
     list-style-type: none;
     text-align: left; }
-    .aditional-info ul li {
+    .aditional-info .wrapper ul li {
       margin-top: 0.7em;
       padding: 3px 10px;
       border-left: 2px solid #343a40;
       box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4); }
+
+@media only screen and (max-width: 376px) {
+  .aditional-info .wrapper ul {
+    width: 100%;
+    padding-left: 0; }
+  .slider .prev {
+    left: 25px; }
+  .slider .next {
+    right: 5px; } }
 
 .bg-modal {
   width: 100%;
