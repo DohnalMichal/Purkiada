@@ -100,13 +100,16 @@ ScrollReveal().reveal('.information p', { delay: 350, duration: 1000, distnace: 
 ScrollReveal().reveal('.wrapper img', { delay: 300, duration: 1000, distnace: '40px'});
 ScrollReveal().reveal('.information #map', { delay: 300, duration: 1000});
 //Footer
-// ScrollReveal().reveal('footer p, footer .icons', { delay: 200, duration: 1000, distnace: '40px'});
+//ScrollReveal().reveal('footer p, footer .icons', { delay: 200, duration: 1000, distnace: '40px'});
 //Nav
 ScrollReveal().reveal('nav', { duration: 800, distance: '-10px' });
 //Prihlaska
 ScrollReveal().reveal('form', { delay: 200, duration: 1000, distance: '20px' });
 //Zadani & Vysledky
-ScrollReveal().reveal('.zadani, .vysledky, .informace', { delay: 200, duration: 800, distance: '20px' });
+ScrollReveal().reveal('.zadani h1, .zadani p', { delay: 200, duration: 800, distance: '20px' });
+ScrollReveal().reveal('.card-show', { delay: 200, duration: 800, distance: '20px' });
+ScrollReveal().reveal('.aditional-info .wrapper h2, .aditional-info .wrapper ul', { delay: 100, duration: 800, distance: '20px' });
+
 //Fotogalerie
 ScrollReveal().reveal('.row', { delay: 200, duration: 800, distance: '20px' });
 
@@ -118,8 +121,8 @@ ScrollReveal().reveal('.row', { delay: 200, duration: 800, distance: '20px' });
 // });
 
 //Moving background for main page
-$('#moving-bg').mousemove(function(e){
-   moveX = (e.pageX * -1 / 25);
-   moveY = (e.pageY * -1 / 25);
-  $(this).css('background-position', moveX + 'px ' + moveY + 'px')
-})
+// $('#moving-bg').mousemove(function(e){
+//    moveX = (e.pageX * -1 / 25);
+//    moveY = (e.pageY * -1 / 25);
+//   $(this).css('background-position', moveX + 'px ' + moveY + 'px')
+// })

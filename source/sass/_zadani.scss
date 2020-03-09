@@ -27,6 +27,7 @@
 }
 
 .slider {
+    margin-bottom: 5em;
     position: relative;
     h2 {
         color: $dark;
@@ -59,7 +60,7 @@
 
 .card-show {
     height: auto;
-    background-color: #fff;
+    // background-color: #fff;
     padding: 40px 5px;
     margin: 0 auto;
     overflow: hidden;
@@ -87,6 +88,7 @@
         }
         img {
             width: 100%;
+            max-height: 217px;
             border-radius: 7px 7px 0px 0px;
         }
         h2 {
@@ -95,18 +97,18 @@
             font-size: 28px;
             text-shadow: 2px 2px 3px #ccc;
         }
-        button {
-            color: #fff;
-            background-color: rgba(52, 152, 219, 0.753);
-            border: 1px solid #ccc;
-            border-radius: 7px;
-            margin: 5px;
-            padding: 5px;
-        }
-        button:hover {
-            background-color: rgba(44, 125, 179, 0.753);
-            cursor: pointer;
-        }
+        // button {
+        //     color: #fff;
+        //     background-color: rgba(52, 152, 219, 0.753);
+        //     border: 1px solid #ccc;
+        //     border-radius: 7px;
+        //     margin: 5px;
+        //     padding: 5px;
+        // }
+        // button:hover {
+        //     background-color: rgba(44, 125, 179, 0.753);
+        //     cursor: pointer;
+        // }
     }
 }
 
@@ -123,8 +125,9 @@
     flex-direction: column;
     button {
         width: 100%;
+        max-width: 500px;
         color: $green;
-        background-color: #fff;
+        background-color: $bg;
         border: 3px solid $green;
         border-radius: 7px;
         // margin-top: 0.6rem;
@@ -137,7 +140,8 @@
     }
     a {
         margin: 0.3rem auto;
-        width: 500px;
+        width: 100%;
+        max-width: 500px;
     }
     a:hover,
     a:focus,
@@ -161,7 +165,7 @@
 
 
 .aditional-info {
-    margin-top: 5em;
+    // margin: 5em 0;
     width: 100%;
     text-align: center;
     background-color: $bg;
@@ -184,15 +188,27 @@
             list-style-type: none;
             text-align: left;
             li {
-                // padding-left: 0.7em;
+                padding-left: 0.7em;
                 // border-left: 2px solid $dark;
-                margin-top: 0.7em;
+                margin-top: 0.9em;
                 // background-color: #f3f3f3;
-                padding: 3px 10px;
+                padding: 5px 12px;
                 border-left: 2px solid $dark;
-                box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4);
+                box-shadow: 5px 5px 5px -5px rgba(0, 0, 0, 0.4);
             }
         }
+    }
+}
+
+.zadani-wrapper {
+    justify-content: space-around;
+    padding: 2em 0 5em 0;
+    img {
+        margin: 0;
+    }
+    .buttons {
+        margin: 0;
+        width: 38%;
     }
 }
 
