@@ -16,7 +16,7 @@ h2 {
 table {
     width: 100%;
     max-width: 1000px;
-    box-shadow: 0 5px 30px -5px rgba(0,0,0,.4);
+    box-shadow: 0 5px 10px -5px rgba(0,0,0,.4);
     // border: 1px solid red;
     border-radius: 7px;
     color: $dark;
@@ -25,7 +25,7 @@ table {
 }
 
 thead {
-    background-color: $green;
+    background-color: #206ea5d3;
     font-weight: bold;
     color: #fff;
     border-radius: 7px;
@@ -44,6 +44,10 @@ tbody tr:nth-of-type(10) td:nth-of-type(1){
 }
 tbody tr:nth-of-type(10) td:nth-of-type(5){
     border-radius: 0px 0px 7px 0px;
+}
+
+tbody tr td:nth-of-type(3), tbody tr td:nth-of-type(5) {
+    font-weight: 600;
 }
 
 td {
@@ -73,13 +77,17 @@ tr:nth-child(even) {
 		top: -9999px;
 		left: -9999px;
 	}
-	tr { border-bottom: 1px solid #ccc; }
+	tr { 
+        border-bottom: 1px solid #ccc; 
+        padding: 0.75em;
+    }
 	td { 
 		/* Behave  like a "row" */
 		border: none;
-		// border-bottom: 1px solid #eee; 
+        border-bottom: 1px solid #eee; 
+        padding: 0.6em;
 		position: relative;
-		padding-left: 40%; 
+        padding-left: 40%; 
 	}
 	td:before { 
 		/* Now like a table header */
@@ -92,13 +100,20 @@ tr:nth-child(even) {
 		white-space: nowrap;
 	}
 	//Labels for data
-	td:nth-of-type(1):before { content: "Umístění"; font-weight: bold; }
-	td:nth-of-type(2):before { content: "Jméno"; font-weight: bold; }
-	td:nth-of-type(3):before { content: "Příjmení"; font-weight: bold;}
-	td:nth-of-type(4):before { content: "Škola"; font-weight: bold;}
-    td:nth-of-type(5):before { content: "Počet bodů"; font-weight: bold;}
+	td:nth-of-type(1):before { content: "Umístění"; font-weight: bold; padding: 0.5em; }
+	td:nth-of-type(2):before { content: "Jméno"; font-weight: bold;padding: 0.5em; }
+	td:nth-of-type(3):before { content: "Příjmení"; font-weight: bold;padding: 0.5em; }
+	td:nth-of-type(4):before { content: "Škola"; font-weight: bold;padding: 0.5em; }
+    td:nth-of-type(5):before { content: "Počet bodů"; font-weight: bold;padding: 0.5em; }
     //Body zarovnání na levo
     td:nth-of-type(5) {
         text-align: left;
+    }
+    //Normal text instead of bold
+    tbody tr td:nth-of-type(3), tbody tr td:nth-of-type(5) {
+        font-weight: normal;
+    }
+    .vysledky h2 {
+        margin-bottom: 0.75em;
     }
 }

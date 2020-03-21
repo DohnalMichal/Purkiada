@@ -12,7 +12,7 @@
 
 .modal-content {
     width: 470px;
-    height: 370px;
+    height: 440px;
     background-color: #fff;
     color: #495057;
     border-radius: 7px;
@@ -124,6 +124,18 @@ button, input {
             width: 70%;
         }
     }
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+      .modal-content {
+          width: 95%;
+          height: 70%;
+      }
+
 }
 // /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
 // @media only screen 

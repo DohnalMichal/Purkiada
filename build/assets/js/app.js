@@ -94,35 +94,22 @@ window.onclick = function (event) {
 ScrollReveal().reveal('.headline', { distance: '20px' });
 ScrollReveal().reveal('.text, .description p', { delay: 200, duration: 1000, distance: '20px' });
 ScrollReveal().reveal('.description a', { delay: 300, duration: 1200, distance: '20px' });
-
-ScrollReveal().reveal('.information h2', { delay: 300, duration: 1000, distnace: '40px'});
+//Headers
+// ScrollReveal().reveal('section h2, .animated', { delay: 300, duration: 1000, distnace: '40px'});
 ScrollReveal().reveal('.information p', { delay: 350, duration: 1000, distnace: '40px'});
 ScrollReveal().reveal('.wrapper img', { delay: 300, duration: 1000, distnace: '40px'});
 ScrollReveal().reveal('.information #map', { delay: 300, duration: 1000});
 //Footer
-//ScrollReveal().reveal('footer p, footer .icons', { delay: 200, duration: 1000, distnace: '40px'});
+// ScrollReveal().reveal('footer p, footer .icons', { delay: 200, duration: 1000, distnace: '40px'});
 //Nav
 ScrollReveal().reveal('nav', { duration: 800, distance: '-10px' });
 //Prihlaska
 ScrollReveal().reveal('form', { delay: 200, duration: 1000, distance: '20px' });
 //Zadani & Vysledky
-ScrollReveal().reveal('.zadani h1, .zadani p', { delay: 200, duration: 800, distance: '20px' });
+ScrollReveal().reveal('.zadani h1', { delay: 200, duration: 800, distance: '40px' });
+ScrollReveal().reveal('.zadani h2, .zadani p', { delay: 300, duration: 800, distance: '40px' });
 ScrollReveal().reveal('.card-show', { delay: 200, duration: 800, distance: '20px' });
 ScrollReveal().reveal('.aditional-info .wrapper h2, .aditional-info .wrapper ul', { delay: 100, duration: 800, distance: '20px' });
-
-//Fotogalerie
-ScrollReveal().reveal('.row', { delay: 200, duration: 800, distance: '20px' });
-
-//Slider-show
-// $('.card-show').slick({
-//   infinite: true,
-//   slidesToShow: 2,
-//   slidesToScroll: 3
-// });
-
-//Moving background for main page
-// $('#moving-bg').mousemove(function(e){
-//    moveX = (e.pageX * -1 / 25);
-//    moveY = (e.pageY * -1 / 25);
-//   $(this).css('background-position', moveX + 'px ' + moveY + 'px')
-// })
+//Zadani & Vysledky Rocnik
+ScrollReveal().reveal('.vysledky table', { delay: 100, duration: 800, distance: '20px' });
+ScrollReveal().reveal('.buttons', { delay: 100, duration: 800, distance: '20px' });
