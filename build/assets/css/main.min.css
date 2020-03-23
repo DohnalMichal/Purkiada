@@ -287,7 +287,7 @@ tr:nth-child(even) {
 
 .modal-content {
   width: 470px;
-  height: 440px;
+  height: 420px;
   background-color: #fff;
   color: #495057;
   border-radius: 7px;
@@ -299,6 +299,7 @@ tr:nth-child(even) {
     font-size: 10px;
     text-align: left; }
   .modal-content h2 {
+    margin-bottom: 20px;
     text-align: center;
     font-weight: normal; }
 
@@ -382,7 +383,16 @@ button, input {
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
   .modal-content {
     width: 95%;
-    height: 70%; } }
+    height: 65vh; }
+    .modal-content h2 {
+      margin-top: 20px; } }
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .modal-content {
+    width: 85%;
+    height: 90vh; }
+    .modal-content button {
+      margin-top: 5px; } }
 
 .background {
   background-color: #f8f9fa;
@@ -400,6 +410,7 @@ button, input {
     .wrapper .information p {
       color: #6c757d; }
     .wrapper .information h2 {
+      text-align: left;
       margin-top: 0;
       color: #343a40; }
   .wrapper img {
@@ -407,6 +418,8 @@ button, input {
   .wrapper .second-information {
     width: 100%;
     text-align: center; }
+    .wrapper .second-information h2 {
+      text-align: center; }
 
 .wrapper.second-wrapper {
   margin-top: 7em;

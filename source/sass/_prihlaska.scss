@@ -12,7 +12,7 @@
 
 .modal-content {
     width: 470px;
-    height: 440px;
+    height: 420px;
     background-color: #fff;
     color: #495057;
     border-radius: 7px;
@@ -27,6 +27,7 @@
         text-align: left;
     }
     h2 {
+        margin-bottom: 20px;
         text-align: center;
         font-weight: normal;
     }
@@ -133,40 +134,23 @@ button, input {
   and (-webkit-min-device-pixel-ratio: 2) { 
       .modal-content {
           width: 95%;
-          height: 70%;
+          height: 65vh;
+          h2 {
+              margin-top: 20px;
+          }
       }
-
 }
-// /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
-// @media only screen 
-// and (min-device-width: 375px) 
-// and (max-device-width: 667px) 
-// and (-webkit-min-device-pixel-ratio: 2) { 
-//   form {
-//       top: 54%;
-//   }
-// }
-// @media only screen and (max-height: 680px) 
-//       and (orientation: landscape){
-//         .form-check-input {
-//          top: 60%;
-//         }
-//     }
-//     @media only screen and (max-height: 550px) 
-//       and (orientation: landscape){
-//         .form-check-input {
-//          top: 70%;
-//         }
-//     }
-//     @media only screen and (max-height: 490px) 
-//       and (orientation: landscape){
-//         .form-check-input {
-//          top: 80%;
-//         }
-//     }
-//     @media only screen and (max-height: 410px) 
-//       and (orientation: landscape){
-//         .form-check-input {
-//          top: 90%;
-//         }
-//     }
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+      .modal-content {
+          width: 85%;
+          height: 90vh;
+          button {
+              margin-top: 5px;
+          }
+      }
+}
