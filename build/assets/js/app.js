@@ -1,3 +1,4 @@
+/*Hamburger Menu*/
 $(document).ready(function () {
   $(".menu-icon").on("click", function () {
     $("nav ul").toggleClass("showing");
@@ -9,11 +10,10 @@ $(window).on("scroll", function () {
   if ($(window).scrollTop()) {
     $('nav').addClass('black');
   }
-
   else {
     $('nav').removeClass('black');
   }
-})
+});
 
 const $menu = $(".menu-icon");
 
@@ -29,30 +29,28 @@ $('.toggle').on('click', () => {
   $menu.toggleClass('showing');
 });
 
-//Registration form
+/*Registration form*/
 //From navigation
 function loginFunction(){
-  document.getElementById("loginButton").addEventListener("click",function(){
-    document.querySelector(".bg-modal").style.display = "flex";
-    document.querySelector("form").style.opacity = 1;
+  $("#loginButton").on("click", function(){
+    $(".bg-modal").css("display", "flex");
+    $("form").css("opacity", 1);
   });
   //Button
-  document.getElementById("loginButton2").addEventListener("click",function(){
-    document.querySelector(".bg-modal").style.display = "flex";
-    document.querySelector("form").style.opacity = 1;
+  $("#loginButton2").on("click",function(){
+    $(".bg-modal").css("display", "flex");
+    $("form").css("opacity", 1);
   });
 
-  document.querySelector(".close").addEventListener("click", function(){
-    document.querySelector(".bg-modal").style.display = "none";
+  $(".close").on("click", function(){
+    $(".bg-modal").css("display", "none");
   });
 
-  //Closing modal on click outside of the box
-  const modal = document.getElementById('modal');
-  document.onclick = function(event) {
-    if (event.target == modal) {
-      modal.style.display = "none";
+  $(document).on('click',function(event){
+    if($(event.target).is('#modal')){
+      $("#modal").css("display", "none");
     }
-  }
+  });
 
   //Close on escape
   $(document).keydown(function(event) { 
@@ -62,54 +60,32 @@ function loginFunction(){
   });
 
   //Alert
-  function alertFunction() {
-    alert("Vaše přihláška byla odeslána");
-  };
+  // function alertFunction() {
+  //   alert("Vaše přihláška byla odeslána");
+  // };
 };
-//Dropdown menu
 
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-// Close the dropdown if the user clicks outside of it
-window.onclick = function (event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-
-
-//Scroll reveal
-
+/*Scroll reveal*/
 //Main page
 ScrollReveal().reveal('.headline', { distance: '20px' });
 ScrollReveal().reveal('.text, .description p', { delay: 200, duration: 1000, distance: '20px' });
 ScrollReveal().reveal('.description a', { delay: 300, duration: 1200, distance: '20px' });
-//Headers
+/*Headers*/
 // ScrollReveal().reveal('section h2, .animated', { delay: 300, duration: 1000, distnace: '40px'});
 ScrollReveal().reveal('.information p', { delay: 350, duration: 1000, distnace: '40px'});
 ScrollReveal().reveal('.wrapper img', { delay: 300, duration: 1000, distnace: '40px'});
 ScrollReveal().reveal('.information #map', { delay: 300, duration: 1000});
-//Footer
+/*Footer*/
 // ScrollReveal().reveal('footer p, footer .icons', { delay: 200, duration: 1000, distnace: '40px'});
-//Nav
+/*Nav*/
 ScrollReveal().reveal('nav', { duration: 800, distance: '-10px' });
-//Prihlaska
+/*Prihlaska*/
 ScrollReveal().reveal('form', { delay: 200, duration: 1000, distance: '20px' });
-//Zadani & Vysledky
+/*Zadani & Vysledky*/
 ScrollReveal().reveal('.zadani h1', { delay: 200, duration: 800, distance: '40px' });
 ScrollReveal().reveal('.zadani h2, .zadani p', { delay: 300, duration: 800, distance: '40px' });
 ScrollReveal().reveal('.card-show', { delay: 200, duration: 800, distance: '20px' });
 ScrollReveal().reveal('.aditional-info .wrapper h2, .aditional-info .wrapper ul', { delay: 100, duration: 800, distance: '20px' });
-//Zadani & Vysledky Rocnik
+/*Zadani & Vysledky Rocnik*/
 ScrollReveal().reveal('.vysledky table', { delay: 100, duration: 800, distance: '20px' });
 ScrollReveal().reveal('.buttons', { delay: 100, duration: 800, distance: '20px' });
