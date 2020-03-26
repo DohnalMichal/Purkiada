@@ -1,3 +1,8 @@
+/*Loading screen*/
+$(window).on("load", function(){
+  $(".loader").fadeOut("slow");
+});
+
 /*Hamburger Menu*/
 $(document).ready(function () {
   $(".menu-icon").on("click", function () {

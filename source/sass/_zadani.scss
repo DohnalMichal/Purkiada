@@ -192,15 +192,23 @@ $btn : #0088A6;
             text-align: left;
             li {
                 padding-left: 0.7em;
+                padding-top: 0.25em;
+                padding-bottom: 0.25em;
                 // border-left: 2px solid $dark;
-                margin-top: 0.9em;
+                // margin-top: 0.9em;
                 // background-color: #f3f3f3;
-                padding: 5px 12px;
-                border-left: 2px solid $dark;
-                box-shadow: 5px 5px 5px -5px rgba(0, 0, 0, 0.4);
+                // padding: 5px 12px;
+                // border-left: 2px solid $dark;
+                // box-shadow: 5px 5px 5px -5px rgba(0, 0, 0, 0.4);
             }
         }
     }
+}
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.149);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.115);
 }
 
 .zadani-wrapper {
