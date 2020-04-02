@@ -78,7 +78,7 @@ ScrollReveal().reveal('.description a', { delay: 300, duration: 1200, distance: 
 //Headers
 // ScrollReveal().reveal('section h2, .animated', { delay: 300, duration: 1000, distnace: '40px'});
 ScrollReveal().reveal('.information p', { delay: 350, duration: 1000, distnace: '40px'});
-ScrollReveal().reveal('.wrapper img', { delay: 300, duration: 1000, distnace: '40px'});
+// ScrollReveal().reveal('.wrapper img', { delay: 300, duration: 1000, distnace: '40px'});
 ScrollReveal().reveal('.information #map', { delay: 300, duration: 1000});
 //Footer
 // ScrollReveal().reveal('footer p, footer .icons', { delay: 200, duration: 1000, distnace: '40px'});
@@ -90,7 +90,8 @@ ScrollReveal().reveal('form', { delay: 200, duration: 1000, distance: '20px' });
 ScrollReveal().reveal('.zadani h1', { delay: 200, duration: 800, distance: '40px' });
 ScrollReveal().reveal('.zadani h2, .zadani p', { delay: 300, duration: 800, distance: '40px' });
 ScrollReveal().reveal('.card-show', { delay: 200, duration: 800, distance: '20px' });
-ScrollReveal().reveal('.aditional-info .wrapper h2, .aditional-info .wrapper ul', { delay: 100, duration: 800, distance: '20px' });
+ScrollReveal().reveal('.animated', { delay: 200, duration: 800, distance: '80px' });
+// ScrollReveal().reveal('.aditional-info .wrapper .card', { delay: 100, duration: 800, distance: '20px' });
 //Zadani & Vysledky Rocnik
 ScrollReveal().reveal('.vysledky table', { delay: 100, duration: 800, distance: '20px' });
 ScrollReveal().reveal('.buttons', { delay: 100, duration: 800, distance: '20px' });

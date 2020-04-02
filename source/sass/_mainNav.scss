@@ -13,10 +13,10 @@ header{
 //Zkosení
 .slanted {
 	background: linear-gradient(to bottom, rgba(161, 161, 161, 0.726), rgba(0, 0, 0, 0.808)), url("../img/bg.jpg") no-repeat center center;
-	// background-size: 110%;
-	// -webkit-background-size: auto;
-    // -moz-background-size: auto;
-	// -o-background-size: auto;
+	background-size: cover;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+	-o-background-size: cover;
 	overflow: hidden;
 	//Movemouse
 	// --x: 0px;
