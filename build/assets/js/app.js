@@ -78,7 +78,7 @@ ScrollReveal().reveal('.description a', { delay: 300, duration: 1200, distance: 
 //Headers
 // ScrollReveal().reveal('section h2, .animated', { delay: 300, duration: 1000, distnace: '40px'});
 ScrollReveal().reveal('.information p', { delay: 350, duration: 1000, distnace: '40px'});
-// ScrollReveal().reveal('.wrapper img', { delay: 300, duration: 1000, distnace: '40px'});
+ScrollReveal().reveal('.wrapper .animated', { delay: 300, duration: 1000, distnace: '40px'});
 ScrollReveal().reveal('.information #map', { delay: 300, duration: 1000});
 //Footer
 // ScrollReveal().reveal('footer p, footer .icons', { delay: 200, duration: 1000, distnace: '40px'});
