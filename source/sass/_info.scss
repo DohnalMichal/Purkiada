@@ -1,5 +1,5 @@
 .background {
-    background-color: $bg;
+    background-color: var(--background-color-secondary);
     width: 100%;
     height: auto;
     padding-top: 2em;
@@ -14,12 +14,12 @@
         z-index: 2;
         width: 50%;
         p {
-            color: $gray;
+            color: var(--text-color-primary);
         }
         h2 {
             text-align: left;
             margin-top: 0;
-            color: $dark;
+            color: var(--text-color-primary);
         }
     }
     img {

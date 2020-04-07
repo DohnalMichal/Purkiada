@@ -8,16 +8,16 @@
     h1 {
         font-size: 48px;
         text-transform: uppercase;
-        color: white;
+        color: var(--text-color-secondary);
         margin: 0;
     }
     p {
-        color: white;
+        color: var(--text-color-secondary);
         margin-bottom: 30px;
     }
     a {
         text-decoration: none;
-        color: white;
+        color: var(--text-color-secondary);
         padding: 8px 25px;
         border: 1.5px solid rgba(255, 255, 255, 0.7);
         border-radius: .25rem;
@@ -29,12 +29,6 @@
     }
 }
 
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2) { 
-   
-}
 @media (max-width: 786px){  
     .description {
         width: 80%;

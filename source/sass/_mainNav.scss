@@ -1,6 +1,6 @@
 /*===Main navigation===*/
 $black: rgba(17, 17, 17, 0.74);
-$white: #f8f8f8;
+
 header{
 	// background-size: cover;
 	// -webkit-background-size: cover;
@@ -26,9 +26,9 @@ header{
 	height: 130vh;
 	margin: 0px 0px 200px 0px;
 }
-.slanted::after {
+.slanted::before {
 	content: "";
-    background: #fff;
+    background: var(--background-color-primary);
     height: 300px;
     -webkit-transform: skewY(-5deg);
     -ms-transform: skewY(-5deg);

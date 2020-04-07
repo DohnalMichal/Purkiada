@@ -1,10 +1,20 @@
 /*===Variables===*/
+:root {
+	--background-color-primary: #fff;
+	--background-color-secondary: #f8f9fa;
+	--text-color-primary: #343a40;
+	--text-color-secondary: #fff;
+	--text-color-footer: #fff;
+	--footer-color: #4A6C6C;
+	--button-color: #0088A6;
+  }
+  
 
 $green: #4A6C6C;
 $gray: #6c757d;
 $dark: #343a40;
 // $bg: #F5F6F7;
-$bg: #f8f9fa;
+// $bg: #f8f9fa;
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&subset=latin-ext');
 @import "mainNav.scss";
@@ -27,23 +37,24 @@ body{
 	width: 100%;
 	line-height: 1.5;
 	overflow-y: scroll;
+	background-color: var(--background-color-primary);
 }
 /*Custom scrollbar*/
-body::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
 	box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 	border-radius: 10px;
 	background-color: #F5F5F5;
 }
 
-body::-webkit-scrollbar {
+::-webkit-scrollbar {
 	width: 12px;
-	background-color: #F5F5F5;
+	background-color: transparent;
 }
 
-body::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
 	border-radius: 10px;
 	box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-	background-color: #555;
+	background-color: rgb(155, 155, 155);
 }
 
 section{
@@ -63,6 +74,30 @@ section{
 	}
 	#content{
 		margin: 0;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--background-color-primary: #272727;
+		--background-color-secondary: #222222;
+		--text-color-primary: #ccc;
+		--text-color-secondary: #fff;
+		--text-color-footer: #ccc;
+		--footer-color: #313131;
+		--button-color: #006b83;
+	}
+	::-webkit-scrollbar-track {
+		width: 12px;
+		background-color: rgb(114, 114, 114);
+	}
+	::-webkit-scrollbar-thumb {
+		border-radius: 10px;
+		box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+		background-color: rgb(46, 46, 46);
+	}
+	.card {
+		background-color: #313131;
 	}
 }
 

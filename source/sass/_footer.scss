@@ -6,12 +6,12 @@ footer {
     padding-top: 3em;
     padding-bottom: 5em;
     position: relative;
-    background: $green;
+    background: var(--footer-color);
     margin-top: 2em;
     p {
         position: relative;
         text-align: center;
-        color: white;
+        color: var(--text-color-footer);
         z-index: 99;
         bottom: 10%;
         margin: 0;
@@ -21,13 +21,13 @@ footer {
         left: 50%;
         transform: translate(-50%, -50%);
         font-size: 32px;
-        color: rgb(255, 255, 255);
+        color: var(--text-color-footer);
         margin-top: 1em;
     }
     a {
         margin: 0 2px;
         text-decoration: none;
-        color: #fff;
+        color: var(--text-color-footer);
     }
 
     a:hover {
@@ -38,7 +38,7 @@ footer {
 
 .site-footer.slanted-footer::before {
     content: "";
-    background: $green;
+    background: var(--footer-color);
     height: 200px;
     -webkit-transform: skewY(-5deg);
     -ms-transform: skewY(-5deg);

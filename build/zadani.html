@@ -118,7 +118,11 @@
     <div class="wrapper aditional-info-wrapper">
       <!-- <img src="./img/browser-colors.svg" alt="browser"> -->
       <div class="card">
-        <img src="./img/checklist.svg" alt="checklist">
+        <picture>
+          <source srcset="./img/checklist-dark.svg" media="(prefers-color-scheme: dark)">
+          <source srcset="./img/checklist-light.svg" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)">
+          <img src="./img/checklist-light.svg" alt="checklist">
+        </picture>
         <p>Vždy si řádně <strong>přečíst zadání</strong> a odpovídat na <strong>položenou otázku</strong> a nikoli na věci okolo</p> 
       </div>
       <!-- <div class="card">
@@ -126,11 +130,19 @@
         <p>Odpovídat na <strong>položenou otázku</strong> a nikoli na věci okolo</p>
       </div> -->
       <div class="card">
-        <img src="./img/task.svg" alt="task">
+        <picture>
+          <source srcset="./img/task-dark.svg" media="(prefers-color-scheme: dark)">
+          <source srcset="./img/task-light.svg" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)">
+          <img src="./img/task-light.svg" alt="task">
+        </picture>
         <p>Pokud se vyskytne složitý úkol, se kterým si nevíte rady, <strong>není třeba ho řešit za každou cenu hned.</strong> Můžete ho přeskočit a vrátit se k němu až ve chvíli, kdy máte vyřešeny ty příklady, které jsou jednodušší. Vyhnete se tím zbytečné ztrátě času, který by byl jinak využit pro lehčí příklady.</p>
       </div>
       <div class="card">
-        <img src="./img/test.svg" alt="test">
+        <picture>
+          <source srcset="./img/test-dark.svg" media="(prefers-color-scheme: dark)">
+          <source srcset="./img/test-light.svg" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)">
+          <img src="./img/test-light.svg" alt="test">
+        </picture>
         <p>Je vhodné si po sobě svou práci <strong>zkontrolovat</strong>, a to nejlépe <strong>několikrát</strong> (zbývá-li čas). Je zbytečné práci odevzdávat před vypršením času. Za dřívější odevzdání nelze získat body navíc.</p>
       </div>
       <!-- <ul>
