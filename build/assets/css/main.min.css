@@ -679,7 +679,7 @@ footer {
   padding-top: 3em;
   padding-bottom: 5em;
   position: relative;
-  background: #00833e;
+  background: #4A6C6C;
   margin-top: 2em; }
   .site-footer p {
     position: relative;
@@ -705,7 +705,7 @@ footer {
 
 .site-footer.slanted-footer::before {
   content: "";
-  background: #00833e;
+  background: #4A6C6C;
   height: 200px;
   -webkit-transform: skewY(-5deg);
   -ms-transform: skewY(-5deg);
