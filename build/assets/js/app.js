@@ -30,9 +30,9 @@ $(document).mouseup(function (e) {
   }
 });
 
-$('.toggle').on('click', () => {
-  $menu.toggleClass('showing');
-});
+// $('.toggle').on('click', () => {
+//   $menu.toggleClass('showing');
+// });
 
 /*Registration form*/
 //From navigation
@@ -64,7 +64,7 @@ function loginFunction(){
     }
   });
 
-  //Alert
+  // // Alert
   // function alertFunction() {
   //   alert("Vaše přihláška byla odeslána");
   // };
