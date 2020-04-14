@@ -28,9 +28,9 @@ header{
 }
 .slanted::after {
 	content: "";
-	clip-path: polygon(100% 86%, 0% 100%, 100% 100%);
+	clip-path: polygon(100% 50%, 0% 100%, 100% 100%);
     background: #fff;
-    height: 1000px;
+    height: 200px;
     // -webkit-transform: skewY(-5deg);
     // -ms-transform: skewY(-5deg);
     // transform: skewY(-5deg);

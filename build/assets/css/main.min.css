@@ -20,9 +20,9 @@ header {
 
 .slanted::after {
   content: "";
-  clip-path: polygon(100% 86%, 0% 100%, 100% 100%);
+  clip-path: polygon(100% 50%, 0% 100%, 100% 100%);
   background: #fff;
-  height: 1000px;
+  height: 200px;
   position: absolute;
   left: 0;
   bottom: -30.01vh;
@@ -673,11 +673,13 @@ footer {
   display: block; }
 
 .site-footer {
-  padding-top: 3em;
-  padding-bottom: 5em;
+  height: 14em;
   position: relative;
   background: #4A6C6C;
-  margin-top: 2em; }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #4A6C6C; }
   .site-footer p {
     position: relative;
     text-align: center;
@@ -702,16 +704,14 @@ footer {
 
 .site-footer.slanted-footer::before {
   content: "";
-  background: #4A6C6C;
-  height: 200px;
-  -webkit-transform: skewY(-5deg);
-  -ms-transform: skewY(-5deg);
-  transform: skewY(-5deg);
+  background-color: #4A6C6C;
+  height: 14em;
+  clip-path: polygon(100% 50%, 0% 100%, 100% 100%);
+  -webkit-clip-path: polygon(100% 50%, 0% 100%, 100% 100%);
   position: absolute;
   left: 0;
-  top: -100px;
-  right: 0;
-  z-index: 0; }
+  bottom: 14em;
+  right: 0; }
 
 @keyframes flow {
   from {
