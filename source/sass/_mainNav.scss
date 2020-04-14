@@ -23,10 +23,11 @@ header{
 	// --y: 0px;
 	// background-position: var(--x) var(--y);
 	width: 100%;
-	height: 130vh;
+	height: 100vh;
+	height: calc(var(--vh, 1vh) * 100);
 	margin: 0px 0px 200px 0px;
 }
-.slanted::after {
+.slanted::before {
 	content: "";
 	clip-path: polygon(100% 50%, 0% 100%, 100% 100%);
     background: #fff;
@@ -36,8 +37,14 @@ header{
     // transform: skewY(-5deg);
     position: absolute;
     left: 0;
-    bottom: -30.01vh;
+    bottom: 0;
     right: 0;
+}
+/*Mobile view of skweded header*/
+@media only screen and (max-width: 540px) {
+	.slanted::before {
+		clip-path: polygon(100% 70%, 0% 100%, 100% 100%);
+	}
 }
 
 section{
