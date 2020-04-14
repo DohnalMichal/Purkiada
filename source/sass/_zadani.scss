@@ -267,9 +267,14 @@ $btn : #0088A6;
     h2 {
         margin: 0;
     }
-    .zadani-wrapper {
+    .slider {
+        margin-top: 3em;
+    }
+    .zadani-wrapper.wrapper {
         width: 100%;
         justify-content: center;
+        align-items: center;
+        margin-bottom: 0;
         img {
             width: 40%;
             margin: 0.75em auto 1.5em;

@@ -626,13 +626,17 @@ button, input {
     right: 5px; }
   h2 {
     margin: 0; }
-  .zadani-wrapper {
+  .slider {
+    margin-top: 3em; }
+  .zadani-wrapper.wrapper {
     width: 100%;
-    justify-content: center; }
-    .zadani-wrapper img {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0; }
+    .zadani-wrapper.wrapper img {
       width: 40%;
       margin: 0.75em auto 1.5em; }
-    .zadani-wrapper .buttons {
+    .zadani-wrapper.wrapper .buttons {
       margin: 0 auto;
       width: 90%; } }
 
