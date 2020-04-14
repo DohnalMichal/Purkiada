@@ -20,16 +20,13 @@ header {
 
 .slanted::after {
   content: "";
+  clip-path: polygon(100% 86%, 0% 100%, 100% 100%);
   background: #fff;
-  height: 300px;
-  -webkit-transform: skewY(-5deg);
-  -ms-transform: skewY(-5deg);
-  transform: skewY(-5deg);
+  height: 1000px;
   position: absolute;
   left: 0;
-  bottom: -400px;
-  right: 0;
-  z-index: 0; }
+  bottom: -30.01vh;
+  right: 0; }
 
 section {
   height: auto; }
