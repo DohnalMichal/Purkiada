@@ -1,7 +1,18 @@
 /*Loading screen*/
 $(window).on("load", function(){
   $(".loader").fadeOut("slow");
+  registerSW();
 });
+
+async function registerSW() {
+  if ('serviceWorker' in navigator) {
+    try {
+      await navigator.serviceWorker.register('./sw.js');
+    } catch (e) {
+      console.log('SW registration failed');
+    }
+  }
+}
 
 /*Hamburger Menu*/
 $(document).ready(function () {
