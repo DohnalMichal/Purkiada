@@ -439,10 +439,6 @@ button, input {
     .wrapper .information {
       margin: 0 auto 1.5em auto;
       width: 90%; }
-    .wrapper img {
-      width: 60%;
-      height: auto;
-      margin: 0 auto; }
   .wrapper.second-wrapper {
     flex-direction: column-reverse; }
     .wrapper.second-wrapper img {
@@ -835,3 +831,6 @@ section {
   text-align: justify;
   display: flex;
   flex-direction: column; }
+
+strong {
+  color: #343a40; }
