@@ -1,13 +1,3 @@
-/*Registration of service worker */
-if ('serviceWorker' in navigator) {
-  window.addEventListener("load", () => {
-    navigator.serviceWorker
-      .register('../../sw.js')
-      .then(reg => console.log("Service Worker: Registered"))
-      .catch(err => console.log(`Service Worker: Error: ${err}`));
-  });
-};
-
 /*Loading screen*/
 $(window).on("load", function(){
   $(".loader").fadeOut("slow");
@@ -78,14 +68,6 @@ function loginFunction(){
   // function alertFunction() {
   //   alert("Vaše přihláška byla odeslána");
   // };
-
-  /*Function for resizing vh for mobile view od skewed header*/ 
-  // We listen to the resize event
-  // window.addEventListener('resize', () => {
-  //   // We execute the same script as before
-    let vh = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty('--vh', `${vh}px`);
-  // });
 };
 
 /*Scroll reveal*/

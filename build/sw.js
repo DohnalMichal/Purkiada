@@ -86,7 +86,6 @@ self.addEventListener('fetch', e => {
 						//Add response to cache
 						cache.put(e.request, resClone);
 					});
-				window.stop();	
 				return res;
 			}).catch(err => caches.match(e.request).then(res => res))
 	);
