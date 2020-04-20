@@ -29,6 +29,18 @@ header {
   bottom: 0;
   right: 0; }
 
+.slanted .description img {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: 37px;
+  transform: translateX(-50%);
+  cursor: pointer; }
+
+a[id="arrow"]:target ~ #informace div.information {
+  -webkit-transform: translateY(-500px);
+  transform: translateY(-500px); }
+
 /*Mobile view of skweded header*/
 @media only screen and (max-width: 540px) {
   .slanted::before {
@@ -159,14 +171,14 @@ nav.black ul {
   .description p {
     color: white;
     margin-bottom: 30px; }
-  .description a {
+  .description .button {
     text-decoration: none;
     color: white;
     padding: 8px 25px;
     border: 1.5px solid rgba(255, 255, 255, 0.7);
     border-radius: .25rem;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out; }
-  .description a:hover {
+  .description .button:hover {
     background: rgba(209, 209, 209, 0.5);
     cursor: pointer; }
 
@@ -482,6 +494,16 @@ button, input {
     top: 30%;
     color: #fff; }
 
+.zadani-slanted::before {
+  content: "";
+  clip-path: polygon(100% 40%, 0% 100%, 100% 100%);
+  background: #fff;
+  height: 200px;
+  position: absolute;
+  left: 0;
+  bottom: 20vh;
+  right: 0; }
+
 .slider {
   position: relative;
   margin-top: 6em; }
@@ -584,11 +606,6 @@ button, input {
     color: #6c757d; }
     .aditional-info .wrapper .card img {
       width: 30%; }
-  .aditional-info .wrapper .card:hover {
-    transform: translateY(-8px);
-    -webkit-transform: translateY(-8px);
-    transition: .25s ease-out;
-    -webkit-transition: .25s ease-out; }
   .aditional-info .wrapper ul {
     width: 80%;
     list-style-type: none;
