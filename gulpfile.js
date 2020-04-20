@@ -121,7 +121,7 @@ function watcher() {
     watch(styleSrc, series(css));
     watch(scriptSrc, series(js));
     watch(vendorSrc, series(vendor));
-    watch(['build/*.html', 'build/assets/css/*.css', 'build/assets/js/*.js', 'build/assets/js/vendors/*.js']).on('change', browserSync.reload);
+    watch(['build/*.html', 'build/zadani/*.html', 'build/assets/css/*.css', 'build/assets/js/*.js', 'build/assets/js/vendors/*.js']).on('change', browserSync.reload);
 
 };
 

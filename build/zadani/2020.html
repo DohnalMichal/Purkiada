@@ -5,10 +5,10 @@
   <meta name="Description" content="Stránky školní soutěže Purkiáda">
   <meta charset="UTF-8">
   <title>Purkiáda - zadání 2020</title>
-  <link rel="stylesheet" href="../assets/css/main.min.css" asnyc>
+  <link rel="stylesheet" href="../assets/css/main.min.css">
   <!-- Font awesome icons -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous" async>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" async></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://unpkg.com/scrollreveal"></script>
   <!--Favicon-->
   <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png">
@@ -32,7 +32,7 @@
   <header>
     <nav class="nav white-nav">
       <div class="logo">
-        <a href="../index.html"><img src="../assets/img/logo.svg" width="160px" alt="logo"></a>
+        <a href="../index.html"><img src="../assets/img/logo.svg" width="160" alt="logo"></a>
       </div>
       <div class="menu">
         <ul>
@@ -53,7 +53,7 @@
 
   <section class="vysledky">
     <h2>Výsledky</h2>
-    <table cellspacing="0">
+    <table>
       <thead>
         <tr>
           <td>Pořadí</td>
@@ -142,13 +142,13 @@
     <h2 class="animated">Zadání</h2>
 
     <div class="zadani-wrapper wrapper">    
-      <img src="../assets/img/admin.svg" alt="results" width="300px">
+      <img src="../assets/img/admin.svg" alt="results" width="300">
       <div class="buttons">
-        <a href="#"><button>Zadání</button></a>
-        <a href="#"><button>Záznamový list</button></a>
-        <a href="#"><button>Zadání a nápovědy úloh</button></a>
-        <a href="#"><button>Výsledky ankety</button></a>
-        <a href="#"><button>Výsledky</button></a>
+        <a class="button" href="#">Zadání</a>
+        <a class="button" href="#">Záznamový list</a>
+        <a class="button" href="#">Zadání a nápovědy úloh</a>
+        <a class="button" href="#">Výsledky ankety</a>
+        <a class="button" href="#">Výsledky</a>
       </div>
     </div>
   </div>
@@ -201,7 +201,7 @@
     </div>
   </div>
 
-  <footer class="site-footer" style="margin-top: 5em;">
+  <footer class="site-footer slanted-footer footer-margin" style="margin-top: 5em;">
     <div>
       <p> © 2019 Střední průmyslová škola Brno, Purkyňova, příspěvková organizace<br>
       <a href="mailto:michal.dohnal@atlas.cz">Michal Dohnal</a><br></p>
@@ -219,30 +219,7 @@
     </div>
   </footer>
 
-  <div id="modal" class="bg-modal">
-    <div class="modal-content">
-      <div class="close">&times;</div>
-      <h2>Přihláška</h2>
-      <form onsubmit="alertFunction()">
-        <input type="text" id="name" aria-describedby="name" aria-required="true" placeholder="Jméno*">
-        <input type="text" id="surname" aria-describedby="surname" aria-required="true" placeholder="Příjmení*">
-        <input type="email" id="email" aria-describedby="emailHelp" aria-required="true"
-          placeholder="Zadejte e-mailovou adresu*">
-        <input type="text" style="margin-bottom: 0;" id="school" aria-describedby="school" aria-required="true"
-          placeholder="Škola*">
-        <label for="school">
-          <p>* povinné pole</p>
-        </label>
-        <div class="checkbox">
-          <input type="checkbox" id="exampleCheck1">
-          <label for="exampleCheck1">Souhlasím s podmínkami o zpracování osobních údajů</label>
-        </div>
-        <button type="submit" class="btn btn-primary">Závazně přihlásit</button>
-      </form>
-    </div>
-  </div>
-
-  <div class="loader">
+  <!-- <div class="loader">
     <div class="dot-container">
       <p class="color-offwhite">&#60; /</p>
       <p class="color-green">loading</p>
@@ -251,13 +228,13 @@
       <div class="dot dot3 color-yellow"></div>
       <p class="color-offwhite">&#62;</p>
     </div>
-  </div>
+  </div> -->
 
   <script src="../assets/js/app.js"></script>
   <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
-  <script type="text/javascript">
+  <script>
     $(document).ready(function () {
       $('.card-show').slick({
         infinite: false,

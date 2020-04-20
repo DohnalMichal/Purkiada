@@ -22,6 +22,7 @@ table {
     color: $dark;
     // border: 1px solid red;
     margin-bottom: 7em;
+    border-collapse: collapse;
 }
 
 thead {
@@ -106,6 +107,7 @@ tr:nth-child(even) {
     //Body zarovnání na levo
     td:nth-of-type(5) {
         text-align: left;
+        border: none;
     }
     //Normal text instead of bold
     tbody tr td:nth-of-type(3), tbody tr td:nth-of-type(5) {

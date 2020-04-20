@@ -131,7 +131,7 @@ $btn : #0088A6;
     margin: 6em auto;
     display: flex;
     flex-direction: column;
-    button {
+    a {
         width: 100%;
         max-width: 500px;
         color: $dark;
@@ -144,17 +144,14 @@ $btn : #0088A6;
         // font-weight: bold;
         cursor: pointer;
         transition: 0.25s;
+        font-weight: 600;
+        text-align: center;
+        text-decoration: none;
+        margin: 0.3rem auto;
         // transition: color 0.15s ease-in-out 0s, background-color 0.15s ease-in-out 0s, border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s, -webkit-box-shadow 0.15s ease-in-out 0s, opacity 1.2s cubic-bezier(0.5, 0, 0, 1) 0.3s, transform 1.2s cubic-bezier(0.5, 0, 0, 1) 0.3s;;
     }
-    a {
-        margin: 0.3rem auto;
-        width: 100%;
-        max-width: 500px;
-    }
     a:hover,
-    a:focus,
-    button:hover,
-    button:focus {
+    a:focus {
         // box-shadow: inset 0 0 0 3em adjust-hue($green, 10deg);
         background-color: $btn;
         color: rgb(255, 255, 255);
@@ -178,7 +175,7 @@ $btn : #0088A6;
     text-align: center;
     background-color: $bg;
     padding-top: 1em;
-    padding-bottom: 7em;
+    padding-bottom: 9em;
     color: $dark;
     display: block;
     .wrapper {
@@ -279,9 +276,9 @@ $btn : #0088A6;
             width: 40%;
             margin: 0.75em auto 1.5em;
         }
-        .buttons {
-            margin: 0 auto;
+        a, .buttons {
             width: 90%;
         }
+        
     }
 }
