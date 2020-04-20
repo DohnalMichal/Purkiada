@@ -59,20 +59,24 @@ function loginFunction(){
   $("#loginButton").on("click", function(){
     $(".bg-modal").css("display", "flex");
     $("form").css("opacity", 1);
+    $("nav ul").removeClass("showing");
   });
   //Button
   $("#loginButton2").on("click",function(){
     $(".bg-modal").css("display", "flex");
     $("form").css("opacity", 1);
+    $("body").css("overflow-y", "hidden");
   });
 
   $(".close").on("click", function(){
     $(".bg-modal").hide();
+    $("body").css("overflow-y", "scroll");
   });
 
   $(document).on('click',function(event){
     if($(event.target).is('#modal')){
       $("#modal").hide();
+      $("body").css("overflow-y", "scroll");
     }
   });
 
@@ -80,6 +84,7 @@ function loginFunction(){
   $(document).keydown(function(event) { 
     if (event.keyCode == 27) { 
       $('#modal').hide();
+      $("body").css("overflow-y", "scroll");
     }
   });
 

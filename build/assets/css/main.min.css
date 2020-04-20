@@ -280,6 +280,10 @@ tr:nth-child(even) {
   .vysledky h2 {
     margin-bottom: 0.75em; } }
 
+html#modal {
+  height: 100%;
+  overflow-y: hidden; }
+
 .bg-modal {
   width: 100%;
   height: 100%;
@@ -292,12 +296,12 @@ tr:nth-child(even) {
   align-items: center; }
 
 .modal-content {
-  width: 470px;
-  height: 420px;
+  width: 29em;
+  height: auto;
   background-color: #fff;
   color: #495057;
   border-radius: 7px;
-  padding: 15px 0px;
+  padding: 1em 0 3.75em 0;
   position: relative; }
   .modal-content p {
     width: 60%;
@@ -389,7 +393,7 @@ button, input {
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
   .modal-content {
     width: 95%;
-    height: 65vh; }
+    height: 65%; }
     .modal-content h2 {
       margin-top: 20px; } }
 
@@ -784,6 +788,9 @@ footer {
     background: #f92672; }
   .dot-container .color-yellow {
     background: #e6db74; }
+
+:root {
+  font-size: 16px; }
 
 html.sr .load-hidden {
   visibility: hidden; }

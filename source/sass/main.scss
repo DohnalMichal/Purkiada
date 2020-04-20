@@ -17,6 +17,10 @@ $bg: #f8f9fa;
 @import "footer.scss";
 @import "loader.scss";
 
+:root {
+	font-size: 16px;
+}
+
 html.sr .load-hidden {
 	visibility: hidden;
 }
