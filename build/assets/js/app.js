@@ -18,7 +18,7 @@ if ('serviceWorker' in navigator) {
 };
 
 /*Loading screen*/
-$(window).on("load", function(){
+$(window).on("load", function () {
   $(".loader").fadeOut("slow");
 });
 
@@ -55,34 +55,34 @@ $(document).mouseup(function (e) {
 
 /*Registration form*/
 //From navigation
-function loginFunction(){
-  $("#loginButton").on("click", function(){
+function loginFunction() {
+  $("#loginButton").on("click", function () {
     $(".bg-modal").css("display", "flex");
     $("form").css("opacity", 1);
     $("nav ul").removeClass("showing");
   });
   //Button
-  $("#loginButton2").on("click",function(){
+  $("#loginButton2").on("click", function () {
     $(".bg-modal").css("display", "flex");
     $("form").css("opacity", 1);
     $("body").css("overflow-y", "hidden");
   });
 
-  $(".close").on("click", function(){
+  $(".close").on("click", function () {
     $(".bg-modal").hide();
     $("body").css("overflow-y", "scroll");
   });
 
-  $(document).on('click',function(event){
-    if($(event.target).is('#modal')){
+  $(document).on('click', function (event) {
+    if ($(event.target).is('#modal')) {
       $("#modal").hide();
       $("body").css("overflow-y", "scroll");
     }
   });
 
   //Close on escape
-  $(document).keydown(function(event) { 
-    if (event.keyCode == 27) { 
+  $(document).keydown(function (event) {
+    if (event.keyCode == 27) {
       $('#modal').hide();
       $("body").css("overflow-y", "scroll");
     }
@@ -93,7 +93,7 @@ function loginFunction(){
   //   alert("Vaše přihláška byla odeslána");
   // };
 
-  /*Function for resizing vh for mobile view od skewed header*/ 
+  /*Function for resizing vh for mobile view od skewed header*/
   // We listen to the resize event
   // window.addEventListener('resize', () => {
   //   // We execute the same script as before
@@ -109,9 +109,9 @@ ScrollReveal().reveal('.text, .description p', { delay: 200, duration: 1000, dis
 ScrollReveal().reveal('.description a', { delay: 300, duration: 1200, distance: '20px' });
 //Headers
 // ScrollReveal().reveal('section h2, .animated', { delay: 300, duration: 1000, distnace: '40px'});
-ScrollReveal().reveal('.information p', { delay: 350, duration: 1000, distnace: '40px'});
-ScrollReveal().reveal('.wrapper .animated', { delay: 300, duration: 1000, distnace: '40px'});
-ScrollReveal().reveal('.information #map', { delay: 300, duration: 1000});
+ScrollReveal().reveal('.information p', { delay: 350, duration: 1000, distnace: '40px' });
+ScrollReveal().reveal('.wrapper .animated', { delay: 300, duration: 1000, distnace: '40px' });
+ScrollReveal().reveal('.information #map', { delay: 300, duration: 1000 });
 //Footer
 // ScrollReveal().reveal('footer p, footer .icons', { delay: 200, duration: 1000, distnace: '40px'});
 //Nav

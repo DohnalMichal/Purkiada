@@ -21,6 +21,11 @@ $bg: #f8f9fa;
 	font-size: 16px;
 }
 
+//Smooth scrolling
+html {
+	scroll-behavior: smooth;
+}
+
 html.sr .load-hidden {
 	visibility: hidden;
 }
