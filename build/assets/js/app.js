@@ -17,6 +17,15 @@ if ('serviceWorker' in navigator) {
   });
 };
 
+/*Smooth Scrolling */
+$(document).on('click', 'a[href^="#"]', function (event) {
+  event.preventDefault();
+
+  $('html, body').animate({
+    scrollTop: $($.attr(this, 'href')).offset().top
+  }, 500);
+});
+
 /*Loading screen*/
 $(window).on("load", function () {
   $(".loader").fadeOut("slow");
@@ -60,6 +69,7 @@ function loginFunction() {
     $(".bg-modal").css("display", "flex");
     $("form").css("opacity", 1);
     $("nav ul").removeClass("showing");
+    $("body").css("overflow-y", "hidden");
   });
   //Button
   $("#loginButton2").on("click", function () {
