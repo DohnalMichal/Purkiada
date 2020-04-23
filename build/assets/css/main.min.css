@@ -33,18 +33,9 @@ header {
   width: 50px;
   height: 50px;
   position: absolute;
-  bottom: 37px;
+  bottom: 2.313em;
   transform: translateX(-50%);
   cursor: pointer; }
-
-a[id="arrow"]:target ~ #informace div.information {
-  -webkit-transform: translateY(-500px);
-  transform: translateY(-500px); }
-
-/*Mobile view of skweded header*/
-@media only screen and (max-width: 540px) {
-  .slanted::before {
-    clip-path: polygon(100% 70%, 0% 100%, 100% 100%); } }
 
 section {
   height: auto; }
@@ -59,7 +50,7 @@ nav {
   position: fixed;
   width: 100%;
   line-height: 60px;
-  z-index: 99; }
+  z-index: 999; }
   nav ul {
     line-height: 60px;
     list-style: none;
@@ -146,7 +137,9 @@ nav.black ul {
     max-height: 34em; }
   .menu-icon {
     display: block;
-    padding: 10px 24px 0px; } }
+    padding: 10px 24px 0px; }
+  .slanted .description img {
+    bottom: 2em; } }
 
 @media only screen and (max-width: 786px) and (orientation: landscape) {
   nav ul {
@@ -157,6 +150,15 @@ nav.black ul {
     line-height: 40px; }
   .menu-icon {
     height: 70px; } }
+
+/*Mobile view of skweded header*/
+@media only screen and (max-width: 540px) {
+  .slanted::before {
+    clip-path: none;
+    transform: skewY(-7deg);
+    bottom: -168px; }
+  .slanted .description img {
+    bottom: 6px; } }
 
 .description {
   margin: 0 auto;
@@ -312,10 +314,10 @@ tr:nth-child(even) {
   background-color: #fff;
   color: #495057;
   border-radius: 7px;
-  padding: 1em 0 3.75em 0;
+  padding: 1em 3em 3.75em 3em;
   position: relative; }
   .modal-content p {
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
     font-size: 10px;
     text-align: left; }
@@ -337,16 +339,17 @@ form {
   opacity: 1; }
 
 input {
-  width: 60%;
+  width: 80%;
   display: block;
   margin: 1em auto;
   padding: 0.6em;
   border: 1px solid #ced4da;
   border-radius: .25rem;
+  font-size: 1rem;
   transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out; }
 
 .checkbox {
-  width: 60%;
+  width: 80%;
   margin: 10px auto;
   text-align: left;
   padding: 0;
@@ -394,24 +397,25 @@ button, input {
 /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
 @media only screen and (max-device-width: 400px) {
   .modal-content input[type=text], .modal-content input[type=email] {
-    width: 70%; }
+    width: 90%; }
   .modal-content p {
-    width: 70%; }
+    width: 90%; }
   .modal-content .checkbox {
-    width: 70%; } }
+    width: 90%; } }
 
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
   .modal-content {
-    width: 95%;
-    height: 65%; }
+    width: 80%;
+    height: 65%;
+    height: calc(var(--vh, 1vh) * 65); }
     .modal-content h2 {
       margin-top: 20px; } }
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   .modal-content {
     width: 85%;
-    height: 90vh; }
+    height: 90%; }
     .modal-content button {
       margin-top: 5px; } }
 
@@ -502,7 +506,9 @@ button, input {
   position: absolute;
   left: 0;
   bottom: 20vh;
-  right: 0; }
+  right: 0;
+  margin-bottom: -1px;
+  margin-left: -10px; }
 
 .slider {
   position: relative;
