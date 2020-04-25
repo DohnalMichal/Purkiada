@@ -474,7 +474,7 @@ button, input {
 @media only screen and (max-width: 786px) {
   #map {
     width: 100%;
-    max-height: 300px; } }
+    height: auto; } }
 
 .zadani {
   background: linear-gradient(to bottom, rgba(161, 161, 161, 0.726), rgba(0, 0, 0, 0.808)), url("../img/resultsbg.jpg") no-repeat center center;

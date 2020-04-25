@@ -77,6 +77,7 @@
 @media only screen and (max-width: 786px) {
     #map {
         width: 100%;
-        max-height: 300px;
+        height: auto;
+        // max-height: 300px;
     }
 }
