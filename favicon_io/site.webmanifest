@@ -1,0 +1,22 @@
+{
+    "name": "Purkiáda",
+    "short_name": "Purkiáda",
+    "description": "Stránky školní soutěže Purkiáda",
+    "start_url": "index.html",
+    "theme_color": "#fff",
+    "background_color": "#fff",
+    "display": "standalone",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "./android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "./android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}   

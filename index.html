@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="Description" content="Stránky školní soutěže Purkiáda">
+  <meta charset="UTF-8">
+  <meta name="theme-color" content="#FFFFFF">
+  <title>Purkiáda</title>
+  <link rel="stylesheet" href="assets/css/main.min.css">
+  <!-- Hamburger menu icon -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <!--Favicon-->
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="./favicon_io/site.webmanifest">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <link rel="preconnect" src="https://www.google-analytics.com">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163570663-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-163570663-1');
+  </script>
+</head>
+<body onload="loginFunction()">
+  <header>
+    <nav class="nav">
+      <div class="logo">
+        <a href="#"><img src="assets/img/logo.svg" width="160" alt="logo"></a>
+      </div>
+      <div class="menu">
+        <ul>
+          <li><a href="#" id="loginButton">Přihláška</a></li>
+          <li><a href="#informace">Informace</a></li>
+          <li><a href="zadani.html">Zadání</a></li>
+        </ul>
+      </div>
+      <div class="menu-icon">
+        <i class="fa fa-bars fa-2x"></i>
+      </div>
+    </nav>
+  </header>
+  <section class="slanted" id="moving-bg">
+    <div class="description">
+      <h1 class="headline">Purkiáda</h1>
+      <p>Purkiáda je soutěž pořádaná Střední průmyslovou školou Brno, která je zaměřena na řešení různých logických a
+        grafických úloh na počítači.</p>
+      <a class="button" href="#" id="loginButton2">Přihláška</a><br>
+      <a id="arrow" class="arrow" href="#informace"><img src="assets/img/arrow.svg" alt="arrow"></a>
+    </div>
+  </section>
+  <div id="informace" class="wrapper" style="margin-top: -13.75em; margin-bottom: 5em; padding-top: 6.25em;">
+    <div class="information">
+      <h2>Co je to Purkiáda?</h2>
+      <p>Purkiáda je soutěž pořádaná Střední průmyslovou školou Brno, Purkyňova 97. Soutěž je určena žákům devátých tříd základních škol. Budete na počítačích řešit úkoly zaměřené na logické a kreativní myšlení, práci s grafickým programem a internetem. Celkový počet účastníků je také omezen kapacitou počítačových učeben, tj. maximálně 100 soutěžících.</p>
+    </div>
+    <img class="animated" src="./assets/img/computer-colors.svg" loading="lazy" alt="computer" width="300" height="240">
+  </div>
+  <div class="wrapper second-wrapper">
+    <img class="animated" src="./assets/img/dashboard-colors.svg" loading="lazy" alt="dashboard" width="300" height="240">
+    <div class="information">
+      <h2 class="animated">Co získám?</h2>
+      <p>Prvních deset nejlepších řešitelů Purkiády bude pozváno do školy a obdrží hodnotné ceny. Všichni úspěšní účastníci dostanou účastnický list, který budou moci<strong> uplatnit v přijímacím řízení</strong> na naší škole.</p>
+    </div>
+  </div>
+  <div class="background">
+    <div class="wrapper">
+      <div class="information second-information">
+        <h2>Kdy a kde?</h2>
+        <p>10. ročník Purkiády se koná 30.1.2019 od 9 do 12 hodin na naší škole.</p>
+          <p>Najdete nás v Brně na Purkyňově ulici 97.</p> 
+          <p>Příklady budeme řešit od 9 hodin, v 8.30 hodin vás přivítáme v jídelně naší školy (od vrátnice vpravo podle šipek).</p>
+        <a href="https://www.google.com/maps/place/St%C5%99edn%C3%AD+pr%C5%AFmyslov%C3%A1+%C5%A1kola+Brno,+Purky%C5%88ova,+p%C5%99%C3%ADsp%C4%9Bvkov%C3%A1+organizace/@49.2257799,16.5771355,15.18z/data=!4m5!3m4!1s0x47129403c69be65b:0xd9c7d91a683162ab!8m2!3d49.225329!4d16.580324" rel="noopener" target="_blank"><img src="./assets/img/mapa.PNG" loading="lazy" alt="mapa" id="map"></a>
+          <div style="margin-bottom: 3.125em;">
+            <p>Každý při příchodu do jídelny dostane <strong>přidělený kód</strong>, pod kterým bude úlohy <strong>odevzdávat</strong> a pod tímto kódem naleznete pak na webu i vaše  <strong>výsledky</strong>.</p>
+            <p>Na vyřešení úloh <strong> není potřeba znalost žádného speciálního programu</strong>. Pokud nějakého ne zcela běžného programu využíváme, vše je řádně vysvětleno. Doporučujeme pro řešení úloh nepoužívat prohlížeč Internet Explorer.</p>
+            <p>Po skončení soutěže si budete moci školu za doprovodu studentů prohlédnout. Pozvánka na prohlídku školy platí i pro váš případný doprovod.</p>
+            <p>Na vaši účast se těší přípravný tým Purkiády</p>
+          </div>
+      </div>
+    </div>
+  </div>
+  <footer class="site-footer slanted-footer">
+    <div>
+    <div>
+      <p> © 2019 Střední průmyslová škola Brno, Purkyňova, příspěvková organizace <br>
+        <a href="mailto:michal.dohnal@atlas.cz">Michal Dohnal</a><br>
+      Icons made by <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a> and <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
+    </div>
+    <div class="icons">
+      <a href="https://www.facebook.com/sspbrno/" rel="noopener" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+      <a href="https://twitter.com/Purkynka" rel="noopener" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
+      <a href="http://www.sspbrno.cz/" rel="noopener" target="_blank"><ion-icon name="globe"></ion-icon></a>
+    </div>
+  </div>
+  </footer>
+  <div id="modal" class="bg-modal">
+    <div class="modal-content">
+      <div class="close">&times;</div>
+      <h2>Přihláška</h2>
+      <form onsubmit="alertFunction()">
+        <input type="text" id="name" aria-describedby="name" aria-required="true" placeholder="Jméno*">
+        <input type="text" id="surname" aria-describedby="surname" aria-required="true" placeholder="Příjmení*">
+        <input type="email" id="email" aria-describedby="emailHelp" aria-required="true" placeholder="Zadejte e-mailovou adresu*">
+        <input type="text" style="margin-bottom: 0;" id="school" aria-describedby="school" aria-required="true" placeholder="Škola*">
+        <p><label for="school">* povinné pole</label></p>
+        <div class="checkbox">
+          <input type="checkbox" id="exampleCheck1">
+          <label for="exampleCheck1">Souhlasím s podmínkami o zpracování osobních údajů</label>  
+        </div>
+        <button type="submit" class="btn btn-primary">Závazně přihlásit</button>
+      </form>
+    </div>
+  </div>
+  <div class="loader">
+    <div class="dot-container">
+      <p class="color-offwhite">&#60; /</p>
+      <p class="color-green">loading</p>
+      <div class="dot dot1 color-blue"></div>
+      <div class="dot dot2 color-red"></div>
+      <div class="dot dot3 color-yellow"></div>
+      <p class="color-offwhite">&#62;</p>
+    </div>
+  </div>
+  <script src="./assets/js/app.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+</body>
+</html>
