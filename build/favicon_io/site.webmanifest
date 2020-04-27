@@ -2,7 +2,7 @@
     "name": "Purkiáda",
     "short_name": "Purkiáda",
     "description": "Stránky školní soutěže Purkiáda",
-    "start_url": "index.html",
+    "start_url": "../index.html",
     "theme_color": "#fff",
     "background_color": "#fff",
     "display": "standalone",
