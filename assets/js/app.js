@@ -11,11 +11,14 @@ console.log(`%c
 if ('serviceWorker' in navigator) {
   window.addEventListener("load", () => {
     navigator.serviceWorker
-      .register('../../sw.js')
+      .register('/../../sw.js/')
       .then(reg => console.log("Service Worker: Registered"))
       .catch(err => console.log(`Service Worker: Error: ${err}`));
   });
 };
+// if (navigator.serviceWorker) {
+//   navigator.serviceWorker.register('/Purkiada/sw.js', {scope: '/Purkiada/'})
+// }
 
 /*Smooth Scrolling */
 $(document).on('click', 'a[href^="#"]', function (event) {
