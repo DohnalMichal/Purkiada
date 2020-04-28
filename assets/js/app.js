@@ -11,7 +11,7 @@ console.log(`%c
 if (navigator.serviceWorker) {
     window.addEventListener("load", () => {
     navigator.serviceWorker
-      .registerregister('/Purkiada/sw.js', {scope: '/Purkiada/'})
+      .register('/Purkiada/sw.js', {scope: '/Purkiada/'})
       .then(reg => console.log("Service Worker: Registered"))
       .catch(err => console.log(`Service Worker: Error: ${err}`));
   });
