@@ -8,14 +8,17 @@ console.log(`%c
 `, "color: #D848B0");
 
 /*Registration of service worker */
-if ('serviceWorker' in navigator) {
-  window.addEventListener("load", () => {
-    navigator.serviceWorker
-      .register('./../../sw.js')
-      .then(reg => console.log("Service Worker: Registered"))
-      .catch(err => console.log(`Service Worker: Error: ${err}`));
-  });
-};
+// if ('serviceWorker' in navigator) {
+//   window.addEventListener("load", () => {
+//     navigator.serviceWorker
+//       .register('./../../sw.js/')
+//       .then(reg => console.log("Service Worker: Registered"))
+//       .catch(err => console.log(`Service Worker: Error: ${err}`));
+//   });
+// };
+if (navigator.serviceWorker) {
+  navigator.serviceWorker.register('/Purkiada/sw.js', {scope: '/Purkiada/'})
+}
 
 /*Smooth Scrolling */
 $(document).on('click', 'a[href^="#"]', function (event) {
