@@ -14,7 +14,7 @@ self.addEventListener('activate', e => {
 			return Promise.all(
 				cacheNames.map(cache => {
 					if (cache !== cacheName) {
-						console.log('Service Worker: Clearing Pld Cache');
+						console.log('Service Worker: Clearing Old Cache');
 						return caches.delete(cache);
 					}
 				})
