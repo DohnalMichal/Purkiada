@@ -26,6 +26,9 @@ header{
 	height: 100vh;
 	height: calc(var(--vh, 1vh) * 100);
 	margin: 0px 0px 200px 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .slanted::before {
 	content: "";
