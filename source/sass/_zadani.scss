@@ -313,3 +313,12 @@ $btn : #0088A6;
         
     }
 }
+
+/*Mobile view of skweded header*/
+@media only screen and (max-width: 540px) {
+	.zadani::before {
+		clip-path: none;
+		transform: skewY(-7deg);
+		bottom: 50px;
+	}
+}
