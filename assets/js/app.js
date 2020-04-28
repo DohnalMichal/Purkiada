@@ -8,16 +8,13 @@ console.log(`%c
 `, "color: #D848B0");
 
 /*Registration of service worker */
-// if ('serviceWorker' in navigator) {
-//   window.addEventListener("load", () => {
-//     navigator.serviceWorker
-//       .register('./../../sw.js/')
-//       .then(reg => console.log("Service Worker: Registered"))
-//       .catch(err => console.log(`Service Worker: Error: ${err}`));
-//   });
-// };
 if (navigator.serviceWorker) {
-  navigator.serviceWorker.register('/Purkiada/sw.js', {scope: '/Purkiada/'})
+    window.addEventListener("load", () => {
+    navigator.serviceWorker
+      .registerregister('/Purkiada/sw.js', {scope: '/Purkiada/'})
+      .then(reg => console.log("Service Worker: Registered"))
+      .catch(err => console.log(`Service Worker: Error: ${err}`));
+  });
 }
 
 /*Smooth Scrolling */
